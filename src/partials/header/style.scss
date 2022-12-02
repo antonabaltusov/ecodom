@@ -1,0 +1,37 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.header {
+  padding: 31px 0;
+  position: sticky;
+  z-index: 100;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  & .nav {
+    padding-top: 8px;
+    padding-left: 7%;
+    flex: 1;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      position: relative;
+      font-weight: 400;
+    }
+    &__link {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+
+      &.active {
+        font-weight: 700;
+        color: $green;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.button-singin {
+  background-color: black;
+  border-color: #ffc734;
+  text-transform: uppercase;
+  color: #ffc734;
+  line-height: 88.6%;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.6875em 0.35em;
+  margin: 0 10px;
+  box-shadow: 0px 0px 8px #ff7b0078;
+  
+  &:hover {
+    cursor: pointer;
+    color: #ffe6a1;
+    border-color: #ffe6a1;
+    box-shadow: none;
+    & .shot-raund-radius-border-left,
+    & .shot-raund-radius-border-right,
+    *::after,
+    *::before {
+      box-shadow: none;
+      border-color: #ffe6a1;
+    }
+  }
+  & .shot-raund-radius-border-left,
+  & .shot-raund-radius-border-right,
+  *::after,
+  *::before {
+    box-shadow: 0px 0px 8px #ff7b0078;
+    border-color: #ffc734;
+  }
+  &__text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2em;
+  }
+}

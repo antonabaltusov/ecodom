@@ -1,0 +1,18 @@
+@import './reset.css';
+@import './variables.scss';
+@import '../assets/fonts/ProximaNova/fonts.css';
+@import './general.scss';
+
+@import '../partials/nav-links/style.scss';
+@import '../partials/header/style.scss';
+@import '../partials/logo/style.scss';
+@import '../partials/footer/style.scss';
+@import '../partials/news-preview/style.scss';
+@import '../partials/video-preview/style.scss';
+
+
+@import '../pages/documents/style.scss';
+@import '../pages/welcome-to-ecodom/style.scss';
+@import '../pages/heplfull/style.scss';
+
+@import '../assets/js/swiper/swiper-bundle.min.css'

@@ -1,0 +1,88 @@
+@import '../../styles/variables';
+
+.footer {
+  color: white;
+  background: #04251A;
+  padding: 80px 0;
+  position: relative;
+  z-index: 99;
+  & a {
+    width: fit-content;
+  }
+  & .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  & .logo {
+    & svg path {
+      fill: white;
+    }
+    &-text {
+      font-size: 12px;
+    }
+    margin-bottom: 37px;
+    display: block;
+  }
+  &__tel {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: $greenLight;
+    text-decoration: none;
+    margin-bottom: 37px;
+    display: block;
+  }
+  &__time {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    &:not(.footer__time-small) {
+      margin-bottom: 2px;
+    }
+    &-small {
+      font-size: 14px;
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+  }
+  & .nav {
+    display: flex;
+    flex-direction: column;
+    & span {
+      display: none;
+    }
+    &__link {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 250%;
+      color: #FFFFFF;
+      &:hover {
+        color: $greenLight;
+        font-weight: 700;
+        text-underline-offset: 0.4em;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  & .button {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    & svg {
+      margin-bottom: 2px;
+      margin-right: 6px;
+    }
+  }
+}

@@ -1,0 +1,196 @@
+@use "sass:math";
+@import './mixins';
+@import './variables';
+
+body {
+  font-family: "Proxima Nova";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+button {
+  font-family: "Proxima Nova";
+}
+.bg-craft::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background-image: url(../assets/img/bg-craft.png);
+  z-index: -1;
+}
+main {
+  margin-top: -134px;
+  padding-top: 134px;
+  flex: 1 0 auto;
+  overflow: hidden;
+  padding-bottom: 120px;
+}
+b {
+  font-weight: 800;
+}
+.container {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include tablet {
+    padding: 0 37px;
+  }
+}
+.img-wrapper {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  & img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+.button {
+  height: 80px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  background: $greenDarkly;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  &:hover {
+    background: $brown;
+  }
+}
+.button.vk {
+  background: #4680C2;
+  padding-top: 0.5%;
+  &:hover {
+    background: #1F599B;
+  }
+}
+.button.tg {
+  background: #2AA2D5;
+  padding-top: 0.5%;
+  &:hover {
+    background: #1C8DBD;
+  }
+}
+.button.reg-oper {
+  padding-top: 0.5%;
+  background: $greenLight;
+}
+.brown-hover {
+  &:hover {
+    background: $brown;
+  }
+}
+.title-1 {
+  font-size: 60px;
+  line-height: 100%;
+}
+
+.modal {
+  display: none;
+  background-color: white;
+  border-radius: 40px;
+  padding: 60;
+  width: 100%;
+  max-width: 1200px;
+  height: fit-content;
+  position: relative;
+  // max-height: calc(100vh - 200px);
+  z-index: 5000;
+  @include tablet {
+    width: 95%;
+  }
+  & .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &-overlay {
+    display: none;
+    background: linear-gradient(0deg, rgba(4, 37, 26, 0.8), rgba(4, 37, 26, 0.8));
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    overflow: auto;
+    justify-content: center;
+    padding-top: 120px;
+    @include tablet {
+      padding-top: 2.5%;
+    }
+  }
+}
+body.modal-active {
+  height: 100vh;
+  overflow: hidden;
+  & .modal-overlay {
+    display: flex;
+    & .modal {
+      display: block;
+      &.news {
+        display: grid;
+      }
+    }
+  }
+}
+.close-btn:hover {
+  cursor: pointer;
+  & path {
+    fill: #A7A7A7;
+  }
+}
+.plash {
+  color: white;
+  display: block;
+  padding: 7px 14px 5px;
+  border-radius: 12px;
+  width: fit-content;
+  &-brown {
+    background-color: $brown;
+  }
+}
+
+.header-craft {
+  margin-top: -134px;
+  padding-top: 134px;
+  padding-bottom: 256px;
+  margin-top: -120px;
+  background: url(../assets/img/header-craft.png);
+  background-size: 100% 100%;
+  &__title {
+    //margin-top: 46px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: $greenDark;
+  }
+  &__description {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+  }
+}
