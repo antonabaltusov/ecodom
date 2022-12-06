@@ -1,17 +1,26 @@
 <footer class="footer">
-  <div class="container">
+  <div class="container footer__top">
    <div>
     {{> "logo/logo"}}
-    <a class="footer__tel" href="tel:+">+7 (3412) 570-454</a>
-    <div class="footer__time">с 10:00 до 20:00</div>
-    <div class="footer__time footer__time-small">Ежедневно, без выходных</div>
-    <div class="footer__time footer__time-small">Обед: с 14:00 до 15:00</div>
-   </div>
-   {{> "nav-links/nav-links"}}
-   <div class="footer__buttons">
-      <a class="button reg-oper brown-hover" href="#" target="_blank">перейти на сайт регоператора</a>
-      <a class="button vk" href="#" target="_blank">{{> "icons/vk" }}<span>сообщество в ВК</span></a>
-      <a class="button tg" href="#" target="_blank">{{> "icons/tg" }}<span>Телеграм-канал</span></a>
-   </div>
+    <div class="only-desktop">
+      <a class="footer__tel" href="tel:+">+7 (3412) 570-454</a>
+      <div class="footer__time">с 10:00 до 20:00</div>
+      <div class="footer__time footer__time-small">Ежедневно, без выходных</div>
+      <div class="footer__time footer__time-small">Обед: с 14:00 до 15:00</div>
+    </div>
+  </div>
+  {{> "nav-links/nav-links"}}
+   <div class="only-mobile">
+      <a class="footer__tel" href="tel:+">+7 (3412) 570-454</a>
+      <div class="footer__time">с 10:00 до 20:00</div>
+      <div class="footer__time footer__time-small">Ежедневно, без выходных</div>
+      <div class="footer__time footer__time-small">Обед: с 14:00 до 15:00</div>
+    </div>
+  {{> "footer-buttons/footer-buttons"}}
+  </div>
+  <div class="container footer__down">
+    <a target="_blank" href="">ООО «Спецавтохозяйство»</a>
+    <a target="_blank" href="../../pages/privacy/privacy.hbs">Политика конфиденциальности</a>
+    <a target="_blank" href="https://webking.pro">Разработка: WebKing</a>
   </div>
 </footer>

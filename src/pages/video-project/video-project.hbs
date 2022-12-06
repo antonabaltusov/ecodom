@@ -5,14 +5,83 @@ video-project: 'true'
 {{!< body }}
 <div class="header-craft">
   <div class="container">
-    <h1 class="header-craft__title">#ЧистоПоУдмуртски</h1>
+    <nav class="breadcrumbs only-tablet">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="../../pages/index/index.hbs">{{> "icons/home"}}</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="">Видеопроект #ЧистоПоУдмуртски</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="header-craft__title">#ЧистоПо<span>-</span>Удмуртски</h1>
     <div class="header-craft__description">Спецпроект о переработке отходов в Удмуртии</div>
   </div>
 </div>
+
 <div class="container">
   <div class="article__list">
-    <div class="article__item">
-      
-    </div>
+    {{> "video-preview/video-preview"
+    number="10"
+    img="../../assets/img/news/news.png"
+    text="Как в Удмуртии варят стекло для президентов и арабской парфюмерии"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="9"
+    img="../../assets/img/news/news.png"
+    text="Первый пункт приёма шин, веток и старой мебели в Ижевске"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="8"
+    img="../../assets/img/news/news.png"
+    text="Путь вторсырья от спецбака до переработчика. Показываем по шагам"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="7"
+    img="../../assets/img/news/news.png"
+    text="Эктоника. Как организовать фестиваль без пластика"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="10"
+    img="../../assets/img/news/news.png"
+    text="Как в Удмуртии варят стекло для президентов и арабской парфюмерии"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="9"
+    img="../../assets/img/news/news.png"
+    text="Первый пункт приёма шин, веток и старой мебели в Ижевске"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="8"
+    img="../../assets/img/news/news.png"
+    text="Путь вторсырья от спецбака до переработчика. Показываем по шагам"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="7"
+    img="../../assets/img/news/news.png"
+    text="Эктоника. Как организовать фестиваль без пластика"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="10"
+    img="../../assets/img/news/news.png"
+    text="Как в Удмуртии варят стекло для президентов и арабской парфюмерии"
+    videoId="qLFgWIYLQjM"
+    }}
+    {{> "video-preview/video-preview"
+    number="9"
+    img="../../assets/img/news/news.png"
+    text="Первый пункт приёма шин, веток и старой мебели в Ижевске"
+    videoId="qLFgWIYLQjM"
+    }}
   </div>
 </div>
+<script type="module" src="../../assets/js/video-popup.ts"></script>

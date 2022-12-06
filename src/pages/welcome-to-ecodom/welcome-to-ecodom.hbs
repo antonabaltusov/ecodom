@@ -3,35 +3,46 @@ welcome-to-ecodom: 'true'
 ---
 
 {{!< body }}
+<nav class="container breadcrumbs only-tablet">
+  <ul class="breadcrumbs__list">
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="../../pages/index/index.hbs">{{> "icons/home"}}</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="../../pages/kak-nachat/kak-nachat.hbs">Экскурсия в Экодом</a>
+    </li>
+  </ul>
+</nav>
 <div class="container welcome bg-craft">
   <div class="welcome__info">
     <h1 class="welcome__title">
       Бесплатные групповые<br>
       экскурсии в Экодом<br>
-      <span>для детей и взрослых<span>
+      <span>для детей и&nbsp;взрослых<span>
     </h1>
     <div class="welcome__description">
-      Соберите группу от 10 до 25 человек и приходите
-      на бесплатную экскурсию в Экодом!
+      Соберите группу от 10 до 25 человек и&nbsp;приходите
+      на бесплатную экскурсию в&nbsp;Экодом!
     </div>
+    {{> "slider-mobile/slider-mobile"}}
     <ul class="welcome__list">
       <li class="welcome__item">
-        <b>Покажем стадии переработки</b> разных видов отходов и что из них получается на наших местных предприятиях
+        <b>Покажем стадии переработки</b> разных видов отходов и что из них получается на&nbsp;наших местных предприятиях
       </li>
       <li class="welcome__item">
         <b>Расскажем, как можно сократить</b> количество мусора в жизни вашей семьи и покажем экологичные альтернативы
       </li>
       <li class="welcome__item">
-        <b>Рассортируем вместе отходы</b> в игровые контейнеры и разберёмся с каждым видом сырья
+        <b>Рассортируем вместе отходы</b> в&nbsp;игровые контейнеры и разберёмся с&nbsp;каждым видом сырья
       </li>
       <li class="welcome__item">
-        <b>Посчитаем сколько можно заработать</b> на карманные расходы, сдавая вторсырье,<br> и тут же выдадим деньги за принесенное 
+        <b>Посчитаем сколько можно заработать</b> на карманные расходы, сдавая вторсырье,<br> и тут же выдадим деньги за&nbsp;принесенное 
       </li>
       <li class="welcome__item">
-        <b>Подарим светоотражающие фликеры,</b> сделанные из пластиковых карт и карандаши<br> из переработанной макулатуры
+        <b>Подарим светоотражающие фликеры,</b> сделанные из пластиковых карт и&nbsp;карандаши<br> из переработанной макулатуры
       </li>
     </ul>
-    <a href="" class="button">Записаться на экскурсию</a>
+    <a target="_blank" href="https://dikidi.net/688565" class="button">Записаться на экскурсию</a>
   </div>
   <div class="welcome__galery">
     <div class="welcome__galery-wrapper">

@@ -3,6 +3,153 @@ kak-nachat: 'true'
 ---
 
 {{!< body }}
-<main>
-  
-</main>
+<div class="header-craft">
+  <div class="container">
+    <h1 class="header-craft__title">как начать разделять?</h1>
+    <div class="header-craft__description">5 простых шагов</div>
+  </div>
+</div>
+<div class="container kak-nachat">
+  <ul class="kak-nachat__list">
+    <li class="kak-nachat__item">
+      <div class="kak-nachat__item-main">
+        <div class="kak-nachat__item-number">01</div>
+        <div class="kak-nachat__item-text">
+          <h2 class="kak-nachat__item-title"><b>Выберите,</b> какие виды<br>
+            отходов будете разделять</h2>
+          <div class="kak-nachat__item-description">Не стоит браться сразу за всё. Начните с 1-2 видов.<br>
+            Например, с легкоузнаваемых ПЭТ-бутылок или<br>
+            макулатуры. Постепенно добавляйте новые фракции</div>
+        </div>
+      </div>
+      <button class="button">{{> "icons/file"}}Что можно сдать в Экодом?</button>
+    </li>
+    <li class="kak-nachat__item">
+      <div class="kak-nachat__item-main">
+        <div class="kak-nachat__item-number">02</div>
+        <div class="kak-nachat__item-text">
+          <h2 class="kak-nachat__item-title"><b>Поставьте отдельную<br>
+            ёмкость</b> для сбора<br>
+            полезных отходов</h2>
+          <div class="kak-nachat__item-description">Необязательно заводить несколько вёдер. Можно собирать<br>
+            ПЭТ-бутылки, стеклянные и алюминиевые банки, пакеты<br>
+            вместе, а рассортировать только перед походом в Экодом</div>
+        </div>
+      </div>
+    </li>
+    <li class="kak-nachat__item">
+      <div class="kak-nachat__item-main">
+        <div class="kak-nachat__item-number">03</div>
+        <div class="kak-nachat__item-text">
+          <h2 class="kak-nachat__item-title"><b>Ополосните отходы</b></h2>
+          <div class="kak-nachat__item-description">Мыть отходы до скрипа необязательно, но ополоснуть<br>
+            от еды и жира необходимо — это позволит избежать<br>
+            неприятных запахов и повысит качество сырья</div>
+        </div>
+      </div>
+    </li>
+    <li class="kak-nachat__item">
+      <div class="kak-nachat__item-main">
+        <div class="kak-nachat__item-number">04</div>
+        <div class="kak-nachat__item-text">
+          <h2 class="kak-nachat__item-title"><b>Спрессуйте всё,</b><br>
+            что возможно</h2>
+          <div class="kak-nachat__item-description">Большую часть отходов при желании можно уменьшить<br>
+            в объёме. Это сэкономит место в контейнере, поможет<br>
+            реже выносить отходы и сдавать больше сырья</div>
+        </div>
+      </div>
+    </li>
+    <li class="kak-nachat__item">
+      <div class="kak-nachat__item-main">
+        <div class="kak-nachat__item-number">05</div>
+        <div class="kak-nachat__item-text">
+          <h2 class="kak-nachat__item-title"><b>Отнесите собранное</b><br>
+            в Экодом или<br>
+            контейнер у дома</h2>
+          <div class="kak-nachat__item-description">В спецбак жёлто-зелёного цвета во дворе можно<br>
+            сдать пластик, стекло, металл, а Экодом принимает<br>
+            больше 30 видов сырья</div>
+        </div>
+      </div>
+      <button class="button">{{> "icons/file"}}Что можно класть в контейнер</button>
+    </li>
+  </ul>
+   <div class="kak-nachat-video kak-nachat-block">
+      <div class="kak-nachat-block__title">Простая инструкция о том,<br>
+        <b>как начать разделять отходы?</b></div>
+        {{> "video/video" 
+          img="../../assets/img/kak-nachat-video.png"
+          time="15"
+          description="кликайте, чтобы посмотреть видео"
+          }}
+  </div>
+  <div class="memory kak-nachat-block">
+    <h2 class="kak-nachat-block__title">Скачайте памятки</h2>
+    <div class="kak-nachat-block__description">чтобы правила сортировки у вас всегда были перед глазами</div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="memory__item">
+          <div class="memory__title-wrapper">
+            <div class="memory__title"><span>правила</span></div>
+            <div class="memory__title"><span>подготовки</span></div>
+            <div class="memory__title"><span>сырья</span></div>
+          </div>
+          <div class="memory__for">для экодома</div>
+          <div class="memory__size">PDF, 2,4 мб</div>
+          <a class="button" href="#" target="_blank">Скачать</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="memory__item">
+            <div class="memory__title-wrapper">
+              <div class="memory__title"><span>правила</span></div>
+              <div class="memory__title"><span>подготовки</span></div>
+              <div class="memory__title"><span>сырья</span></div>
+            </div>
+            <div class="memory__for">для контейнера<br> у дома</div>
+            <div class="memory__size">PDF, 2,4 мб</div>
+            <a class="button" href="#" target="_blank">Скачать</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="memory__item other">
+          <div class="memory__pretitle">Просветительский</div>
+          <div class="memory__title-wrapper">
+            <div class="memory__title"><span>плакат</span></div>
+          </div>
+          <div class="memory__for">для общественных<br> мест</div>
+          <div class="memory__size">PDF, 2,4 мб</div>
+          <a class="button" href="#" target="_blank">Скачать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="kak-nachat-welcome">
+    <div class="kak-nachat-welcome__info">
+      <div class="kak-nachat-welcome__pretitle">Приходите на</div>
+      <div class="kak-nachat-welcome__title"><b>бесплатную<br>
+                                            экскурсию</b><br>
+                                            в экодом</div>
+      <div class="kak-nachat-welcome__description">Каждую неделю во вторник, среду и четверг.<br>
+        Для детей и взрослых группами от 10 до 25 человек</div>
+      <div class="kak-nachat-welcome__place">Место проведения</div>
+      <div class="kak-nachat-welcome__text">ул. Холмогорова, 11<br>
+      <span>Экодом у ТЦ «Талисман»</span></div>
+      <div class="kak-nachat-welcome__text">Нужна предварительная запись</div>
+      <div class="kak-nachat-welcome__buttons">
+        <a href="" class="button">Записаться на экскурсию</a>
+        <a href="../welcome-to-ecodom/welcome-to-ecodom.hbs" class="kak-nachat-welcome__link link">Подробнее об экскурсии</a>
+      </div>
+    </div>
+    
+    <div class="kak-nachat-welcome__img">
+      <div class="img-wrapper">
+        <img src="../../assets/img/kak-nachat-welcome__img.png" alt="фото">
+      </div>
+    </div>
+  </div>
+</div>

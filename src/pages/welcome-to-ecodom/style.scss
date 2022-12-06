@@ -1,16 +1,30 @@
-@import '../../styles/mixins';
-@import '../../styles/variables';
+@import "../../styles/mixins";
+@import "../../styles/variables";
 
 .welcome {
   padding-top: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5.75%;
+  @include tablet {
+    display: block;
+    padding-top: 10px;
+  }
+  & .slider-mobile {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
   &__info {
+    max-width: 100%;
     font-size: 20px;
     line-height: 130%;
     letter-spacing: -0.02em;
     font-weight: 600;
+    @include mobile {
+      font-size: 14px;
+    }
   }
   &__title {
     font-weight: 800;
@@ -21,13 +35,28 @@
     & span {
       color: $greenDark;
     }
+    @include mobile {
+      white-space: normal;
+      font-size: 28px;
+      line-height: 90%;
+      color: $greenDark;
+      & br {
+        display: none;
+      }
+    }
   }
   &__description {
     margin-top: 20px;
     max-width: 450px;
+    @include mobile {
+      margin-top: 10px;
+    }
   }
   &__list {
     margin-top: 45px;
+    @include tablet {
+      margin-top: 30px;
+    }
   }
   &__item {
     margin-top: 30px;
@@ -35,17 +64,48 @@
     max-width: 460px;
     position: relative;
     &::before {
+      content: "";
       position: absolute;
-      content: url(../../assets/img/okey.svg);
+      height: 32.5px;
+      width: 32.5px;
+      background-image: url(../../assets/img/okey.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
       left: -58px;
       top: 0;
+      @include mobile {
+        left: -37px;
+        height: 24.5px;
+        width: 24.5px;
+      }
+    }
+    @include tablet {
+      margin-top: 20px;
+    }
+    @include mobile {
+      margin-left: 37px;
+      max-width: 259px;
+      & br {
+        display: none;
+      }
     }
   }
   & .button {
     margin-top: 40px;
     width: 320px;
+    @include tablet {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
   &__galery {
+    @include tablet {
+      display: none;
+    }
     &-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -55,38 +115,38 @@
         margin-bottom: 20px;
       }
       & .img-wrapper {
-        background: #D9D9D9;
+        background: #d9d9d9;
         border-radius: 16px;
         padding-bottom: 100%;
       }
       &:nth-child(2n - 1) {
         & .img-wrapper:nth-child(1) {
-          grid-column: 1 ;
+          grid-column: 1;
           grid-row: 1;
         }
         & .img-wrapper:nth-child(2) {
-          grid-column: 2 ;
+          grid-column: 2;
           grid-row: 1 / 3;
           height: 100%;
         }
         & .img-wrapper:nth-child(3) {
-          grid-column: 1 ;
+          grid-column: 1;
           grid-row: 2;
         }
       }
       &:nth-child(2n) {
         & .img-wrapper:nth-child(1) {
-          grid-column: 1 /3 ;
+          grid-column: 1 /3;
           grid-row: 1;
           width: 100%;
           padding-bottom: 50%;
         }
         & .img-wrapper:nth-child(2) {
-          grid-column: 1 ;
+          grid-column: 1;
           grid-row: 2;
         }
         & .img-wrapper:nth-child(3) {
-          grid-column: 2 ;
+          grid-column: 2;
           grid-row: 2;
         }
       }

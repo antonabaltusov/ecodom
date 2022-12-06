@@ -1,0 +1,33 @@
+@import "./mixins";
+@import "./variables";
+.breadcrumbs {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  &__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: inherit;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    &:not(:first-child)::before {
+      content: "/ ";
+      display: inline;
+      color: black;
+    }
+    &:not(:last-child) {
+      color: $greenLight;
+      margin-right: 6px;
+    }
+    &:last-child {
+      pointer-events: none;
+    }
+  }
+}

@@ -1,17 +1,62 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .footer {
   color: white;
-  background: #04251A;
-  padding: 80px 0;
+  background: #04251a;
   position: relative;
   z-index: 99;
-  & a {
-    width: fit-content;
-  }
+  overflow: hidden;
   & .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    &.footer__top {
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__top {
+    padding-top: 85px;
+    padding-bottom: 80px;
+    @include mobile {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+  &__down {
+    border-top: 1px solid #424d49;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    & * {
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+      color: #ffffff;
+      opacity: 0.5;
+      text-decoration: none;
+      width: 100%;
+      &:not(:last-child) {
+        @include mobile {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    & > *:last-child {
+      text-align: right;
+      margin: 0 0 0 auto;
+      @include mobile {
+        margin: 0;
+      }
+    }
+  }
+  & a {
+    width: fit-content;
   }
   & .logo {
     & svg path {
@@ -19,9 +64,13 @@
     }
     &-text {
       font-size: 12px;
+      letter-spacing: -0.000001em;
     }
     margin-bottom: 37px;
     display: block;
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
   &__tel {
     font-weight: 800;
@@ -32,6 +81,12 @@
     text-decoration: none;
     margin-bottom: 37px;
     display: block;
+    &:hover {
+      color: $brown;
+    }
+    @include mobile {
+      margin: 30px 0;
+    }
   }
   &__time {
     font-weight: 600;
@@ -47,19 +102,12 @@
     }
   }
   & .nav {
-    display: flex;
-    flex-direction: column;
-    & span {
-      display: none;
-    }
     &__link {
-      font-weight: 600;
       font-size: 16px;
       line-height: 250%;
-      color: #FFFFFF;
+      color: #ffffff;
       &:hover {
         color: $greenLight;
-        font-weight: 700;
         text-underline-offset: 0.4em;
       }
     }
@@ -68,18 +116,24 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @include tablet {
+      align-items: flex-start;
+      margin-top: 20px;
+    }
   }
   & .button {
     display: flex;
     width: 300px;
     height: 50px;
-    margin-bottom: 20px;
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
     text-align: center;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
     & svg {
       margin-bottom: 2px;
       margin-right: 6px;

@@ -1,0 +1,57 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.video {
+  max-width: 920px;
+  width: 100%;
+  position: relative;
+  &__time {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 20px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    background-color: $brown;
+    border-radius: 20px;
+    & svg {
+      margin-right: 12px;
+    }
+  }
+  &__description {
+    position: absolute;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1;
+    color: $greenDark;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #FFFFFF;
+    box-shadow: 0px 9.52789px 31.7596px rgba(5, 64, 44, 0.1);
+    border-radius: 160px;
+    padding: 12px 22px;
+    
+  }
+  & .img-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 50%;
+    background: #D9D9D9;
+    border-radius: 16px;
+  }
+  & .button-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

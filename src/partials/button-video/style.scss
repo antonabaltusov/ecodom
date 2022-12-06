@@ -1,0 +1,20 @@
+.button-video {
+  height: 140px;
+  width: 140px;
+  background: rgba(120, 200, 135, 0.8);
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all;
+  transition-duration: 0.3s;
+  & svg {
+    pointer-events: none;
+  }
+  &:hover {
+    cursor: pointer;
+    transform-origin: top left;
+    transform: scale(1.1428) translate(-50%, -50%);
+  }
+}

@@ -1,13 +1,13 @@
 export default function mobileMenu() {
-  const openButton = document.querySelector('.btn-open-menu') as HTMLButtonElement;
-  const closeButton = document.querySelector('.btn-close-menu') as HTMLButtonElement;
-  const header = document.querySelector('.header') as HTMLElement;
+  const openButton = document.querySelector('.btn-menu-mob') as HTMLButtonElement;
+  const closeButton = document.querySelector('.btn-menu-mob-close') as HTMLButtonElement;
+  const body = document.querySelector('body') as HTMLElement;
 
   openButton.addEventListener('click',  () => {
-    header.classList.add('open-mobile-menu');
+    body.classList.add('open-menu-mob');
   })
   closeButton.addEventListener('click',  () => {
-    header.classList.remove('open-mobile-menu');
+    body.classList.remove('open-menu-mob');
   })
 
 }

@@ -1,7 +1,8 @@
-<div class="news-preview">
+<div class="video-preview" video-id="{{videoId}}">
   <div class="img-wrapper">
     <img src="{{img}}" alt="фото">
+    {{> "button-video/button-video"}}
   </div>
-  <div class="news-preview__title">{{title}}</div>
-  <button class="btn-open-modal">Читать</button>
+  <div class="video-preview__number">{{number}} выпуск</div>
+  <div class="video-preview__text">{{text}}</div>
 </div>

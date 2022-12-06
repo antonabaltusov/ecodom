@@ -1,6 +1,6 @@
 @use "sass:math";
-@import './mixins';
-@import './variables';
+@import "./mixins";
+@import "./variables";
 
 body {
   font-family: "Proxima Nova";
@@ -18,7 +18,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   background-image: url(../assets/img/bg-craft.png);
   z-index: -1;
 }
@@ -28,6 +28,13 @@ main {
   flex: 1 0 auto;
   overflow: hidden;
   padding-bottom: 120px;
+  @include mobile {
+    padding-bottom: 18%;
+  }
+  @include tablet {
+    margin-top: -153px;
+    padding-top: 153px;
+  }
 }
 b {
   font-weight: 800;
@@ -56,7 +63,23 @@ b {
     object-fit: cover;
   }
 }
-
+.link {
+  color: $green;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  & svg path {
+    color: $green;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $brown;
+    & svg path {
+      color: $brown;
+    }
+  }
+}
 button:hover {
   cursor: pointer;
 }
@@ -72,28 +95,41 @@ button:hover {
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   &:hover {
     background: $brown;
   }
 }
 .button.vk {
-  background: #4680C2;
+  background: #4680c2;
   padding-top: 0.5%;
   &:hover {
-    background: #1F599B;
+    background: #1f599b;
   }
 }
 .button.tg {
-  background: #2AA2D5;
+  background: #2aa2d5;
   padding-top: 0.5%;
   &:hover {
-    background: #1C8DBD;
+    background: #1c8dbd;
   }
 }
 .button.reg-oper {
   padding-top: 0.5%;
   background: $greenLight;
+}
+.button-raund {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $greenLight;
+  &:hover {
+    cursor: pointer;
+    background-color: $brown;
+  }
 }
 .brown-hover {
   &:hover {
@@ -104,7 +140,25 @@ button:hover {
   font-size: 60px;
   line-height: 100%;
 }
-
+.only {
+  &-mobile {
+    display: none;
+    @media (max-width: 500px) {
+      display: block;
+    }
+  }
+  &-tablet {
+    @media (min-width: 1250px) {
+      display: none;
+    }
+  }
+  &-desktop {
+    display: none;
+    @media (min-width: 500px) {
+      display: block;
+    }
+  }
+}
 .modal {
   display: none;
   background-color: white;
@@ -119,14 +173,14 @@ button:hover {
   @include tablet {
     width: 95%;
   }
-  & .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
+
   &-overlay {
     display: none;
-    background: linear-gradient(0deg, rgba(4, 37, 26, 0.8), rgba(4, 37, 26, 0.8));
+    background: linear-gradient(
+      0deg,
+      rgba(4, 37, 26, 0.8),
+      rgba(4, 37, 26, 0.8)
+    );
     position: fixed;
     top: 0;
     left: 0;
@@ -135,9 +189,14 @@ button:hover {
     z-index: 500;
     overflow: auto;
     justify-content: center;
-    padding-top: 120px;
+    align-items: center;
     @include tablet {
       padding-top: 2.5%;
+    }
+    & .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
   }
 }
@@ -148,16 +207,13 @@ body.modal-active {
     display: flex;
     & .modal {
       display: block;
-      &.news {
-        display: grid;
-      }
     }
   }
 }
 .close-btn:hover {
   cursor: pointer;
   & path {
-    fill: #A7A7A7;
+    fill: #a7a7a7;
   }
 }
 .plash {
@@ -173,18 +229,39 @@ body.modal-active {
 
 .header-craft {
   margin-top: -134px;
-  padding-top: 134px;
-  padding-bottom: 256px;
-  margin-top: -120px;
+  padding-top: 180px;
+  padding-bottom: 185px;
+  margin-bottom: -50px;
   background: url(../assets/img/header-craft.png);
-  background-size: 100% 100%;
+  background-size: cover;
+  position: relative;
+  @include tablet {
+    margin-top: -153px;
+  }
+  @include mobile {
+    padding-top: 154px;
+    padding-bottom: 134px;
+    margin-bottom: -30;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), white);
+  }
   &__title {
-    //margin-top: 46px;
     font-weight: 900;
     font-size: 60px;
     line-height: 110%;
     text-transform: uppercase;
     color: $greenDark;
+    letter-spacing: 0.025em;
+    @include mobile {
+      font-size: 44px;
+    }
   }
   &__description {
     margin-top: 10px;
@@ -192,5 +269,20 @@ body.modal-active {
     font-size: 20px;
     line-height: 130%;
     letter-spacing: -0.02em;
+  }
+}
+.adaptive_youtube {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  &-wrapper {
+    width: 80%;
+  }
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }

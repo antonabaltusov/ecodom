@@ -1,0 +1,51 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.slider-mobile {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: visible !important;
+  & .img-wrapper {
+    padding-bottom: 66.6666%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  & .swiper-slide {
+    height: fit-content;
+  }
+  & .swiper-wrapper {
+    overflow: visible;
+  }
+  & .swiper-button {
+    &-prev,
+    &-next {
+      width: 10%;
+      height: 15%;
+      &::after {
+        display: none;
+      }
+      & svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        & svg path {
+          fill: $brown;
+        }
+      }
+    }
+    &-prev {
+      left: 0;
+      transform: rotate(180deg) translateX(50%);
+    }
+    &-next {
+      right: 0;
+      transform: translateX(50%);
+    }
+  }
+}
