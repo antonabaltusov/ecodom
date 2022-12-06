@@ -23,15 +23,17 @@
     &-next {
       width: 10%;
       height: 15%;
+      background-color: white;
+      border-radius: 50%;
       &::after {
         display: none;
       }
       & svg {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
       }
       &:hover {
         & svg path {
@@ -41,11 +43,11 @@
     }
     &-prev {
       left: 0;
-      transform: rotate(180deg) translateX(50%);
+      transform: translateX(-50%);
     }
     &-next {
       right: 0;
-      transform: translateX(50%);
+      transform: rotate(180deg) translateX(-50%);
     }
   }
 }
