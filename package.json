@@ -4,7 +4,7 @@
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "scripts": {
     "dev": "parcel src/pages/index/index.hbs --no-cache",
-    "prod": "parcel build src/pages/index/index.hbs --no-content-hash --no-optimize",
+    "prod": "parcel build src/pages/index/index.hbs --no-cache --no-content-hash --no-optimize",
     "start": "parcel build src/pages/index/index.hbs --no-cache && node ./server.js",
     "test": ".github/workflows/tests.yml"
   },
