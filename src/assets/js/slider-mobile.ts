@@ -33,3 +33,15 @@ export default function sliderMobile() {
     });
   }
 }
+export function sliderMemory() {
+  const swiperEl = document.querySelector(".memory .swiper") as HTMLElement;
+  console.log(swiperEl);
+
+  if (swiperEl && document.documentElement.clientWidth < 1250) {
+    new Swiper(swiperEl, {
+      ...baseSliderOptions,
+      spaceBetween: 30,
+      slidesPerView: "auto",
+    });
+  }
+}

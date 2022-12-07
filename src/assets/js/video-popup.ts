@@ -6,7 +6,7 @@ overlay.addEventListener("click", () => {
 });
 const buttons = document.querySelectorAll(".button-video").forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    const videoId = e.target.closest(".video-preview").getAttribute("video-id");
+    const videoId = e.target.closest("[video-id]").getAttribute("video-id");
     const frame = `
     <div class="adaptive_youtube-wrapper">
     <div class="adaptive_youtube">

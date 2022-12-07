@@ -1,5 +1,5 @@
-@import '../../styles/mixins';
-@import '../../styles/variables';
+@import "../../styles/mixins";
+@import "../../styles/variables";
 
 .video {
   max-width: 920px;
@@ -18,14 +18,29 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: $brown;
     border-radius: 20px;
     & svg {
       margin-right: 12px;
     }
+    @include mobile {
+      font-size: 12px;
+      padding: 0px 10px;
+      height: 26px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      & svg {
+        margin-right: 5px;
+        height: 11.5px;
+        width: 11.5px;
+      }
+    }
   }
   &__description {
+    max-width: 100%;
+    width: fit-content;
     position: absolute;
     font-weight: 800;
     font-size: 22px;
@@ -34,24 +49,35 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 9.52789px 31.7596px rgba(5, 64, 44, 0.1);
     border-radius: 160px;
     padding: 12px 22px;
-    
+    white-space: nowrap;
+    @include mobile {
+      font-size: 14px;
+      padding: 10px 18px;
+    }
   }
   & .img-wrapper {
     top: 0;
     left: 0;
     width: 100%;
     padding-bottom: 50%;
-    background: #D9D9D9;
+    background: #d9d9d9;
     border-radius: 16px;
+    @include mobile {
+      padding-bottom: 60%;
+    }
   }
   & .button-video {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include mobile {
+      width: 50px;
+      height: 50px;
+    }
   }
 }

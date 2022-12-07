@@ -238,6 +238,7 @@ body.modal-active {
   position: relative;
   @include tablet {
     margin-top: -153px;
+    background-size: auto 93%;
   }
   @include mobile {
     padding-top: 154px;

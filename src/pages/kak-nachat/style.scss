@@ -1,7 +1,11 @@
-@import '../../styles/mixins';
-@import '../../styles/variables';
+@import "../../styles/mixins";
+@import "../../styles/variables";
 
 .kak-nachat {
+  padding-top: 130px;
+  @include tablet {
+    padding-top: 0;
+  }
   &-block {
     &__title {
       font-weight: 800;
@@ -9,8 +13,22 @@
       line-height: 100%;
       text-align: center;
       color: $greenDark;
+      @include tablet {
+        font-size: 46px;
+      }
+      @include mobile {
+        font-size: 22px;
+      }
       & b {
         color: $brown;
+        text-transform: lowercase;
+        @include mobile {
+          display: block;
+          margin-top: 20px;
+          font-size: 46px;
+          line-height: 1;
+          text-transform: none;
+        }
       }
     }
     &__description {
@@ -24,26 +42,45 @@
   }
   &__list {
     margin-bottom: 120px;
+    @include mobile {
+      margin-bottom: 80px;
+    }
   }
   &__item {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @include tablet {
+      display: block;
+    }
     &:not(:last-child) {
-      & .kak-nachat__item-text {
-      padding-bottom: 80px;
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 30px;
-        height: 100%;
-        width: 4px;
-        background-image: url(../../assets/img/line-border.svg);
+      @include tablet {
+        padding-bottom: 40px;
       }
-    }}
+      & .kak-nachat__item-text {
+        padding-bottom: 80px;
+        @include tablet {
+          padding-bottom: 0;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 30px;
+          height: 100%;
+          width: 4px;
+          background-image: url(../../assets/img/line-border.svg);
+          @include tablet {
+            display: none;
+          }
+        }
+      }
+    }
     &-main {
       display: flex;
+      @include tablet {
+        display: block;
+      }
     }
     &-number {
       font-weight: 800;
@@ -54,12 +91,23 @@
       color: $greenDark;
       width: 103px;
       box-sizing: content-box;
+      @include tablet {
+        margin-bottom: 20px;
+        width: auto;
+        padding-right: 0;
+      }
+      @include mobile {
+        font-size: 40px;
+      }
     }
     &-text {
       padding-left: 100px;
       position: relative;
+      @include tablet {
+        padding-left: 0;
+      }
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         transform: translateX(-50%);
         left: 2px;
@@ -70,8 +118,10 @@
         border-radius: 50%;
         border: 4px solid white;
         box-sizing: border-box;
+        @include tablet {
+          display: none;
+        }
       }
-      
     }
     &-title {
       font-weight: 800;
@@ -81,6 +131,12 @@
       & b {
         color: $brown;
       }
+      @include mobile {
+        font-size: 28px;
+        & br {
+          display: none;
+        }
+      }
     }
     &-description {
       font-weight: 600;
@@ -88,10 +144,22 @@
       line-height: 130%;
       letter-spacing: -0.02em;
       margin-top: 20px;
+      @include mobile {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        & br {
+          display: none;
+        }
+      }
     }
     & .button {
       justify-self: flex-end;
       width: 300px;
+      @include tablet {
+        margin-top: 20px;
+      }
       & svg {
         margin-right: 9px;
       }
@@ -99,26 +167,59 @@
   }
   &-welcome {
     display: flex;
+    position: relative;
+    @include tablet {
+      display: block;
+    }
     &__info {
       width: 44.25%;
+      @include tablet {
+        width: 100%;
+        text-align: center;
+      }
+      & .kak-nachat-welcome__img {
+        position: absolute;
+        width: calc(100% - 44.25%);
+        right: 0;
+        top: 7%;
+        @include tablet {
+          position: static;
+          width: 100%;
+        }
+      }
     }
     &__pretitle {
       font-weight: 900;
       font-size: 30px;
       line-height: 110%;
       text-transform: uppercase;
-      color: #021C13;
+      color: #021c13;
       margin-bottom: 10px;
+      @include mobile {
+        font-size: 20px;
+      }
     }
     &__title {
       font-weight: 900;
       font-size: 60px;
       line-height: 110%;
       text-transform: uppercase;
-      color: #021C13;
+      color: #021c13;
       margin-bottom: 22px;
+      @include mobile {
+        font-size: 20px;
+        & br {
+          display: none;
+        }
+      }
       & b {
         color: $brown;
+        @include mobile {
+          font-size: 38px;
+          line-height: 1;
+          display: block;
+          margin-bottom: 10px;
+        }
       }
     }
     &__description {
@@ -127,6 +228,11 @@
       line-height: 130%;
       letter-spacing: -0.02em;
       margin-bottom: 28px;
+      @include mobile {
+        & br {
+          display: none;
+        }
+      }
     }
     &__place {
       font-weight: 800;
@@ -143,6 +249,12 @@
       line-height: 130%;
       letter-spacing: -0.02em;
       margin-bottom: 20px;
+      @include mobile {
+        margin-bottom: 30px;
+      }
+      & span {
+        color: #9d9d9d;
+      }
     }
     &__buttons {
       margin-top: 22px;
@@ -150,6 +262,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include tablet {
+        margin: 20px auto 0;
+      }
+      @include mobile {
+        margin-top: -10px;
+      }
     }
     & .button {
       width: 100%;
@@ -160,11 +278,20 @@
     &__img {
       flex: 1;
       padding-right: 8%;
+      @include tablet {
+        padding-right: 0;
+        margin: 30px 0;
+        width: 80%;
+      }
       & .img-wrapper {
         padding-bottom: 71.4%;
-        background: #D9D9D9;
+        background: #d9d9d9;
         border-radius: 20px;
         transform: rotate(-8.75deg);
+        @include tablet {
+          transform: none;
+          padding-bottom: 66.66%;
+        }
       }
     }
   }
@@ -173,14 +300,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mobile {
+      margin-bottom: 87px;
+    }
     & .video {
       margin-top: 50px;
+      @include mobile {
+        margin-top: 40px;
+      }
     }
   }
-  
 }
 .memory {
   margin-bottom: 170px;
+  @include mobile {
+    margin-bottom: 95px;
+    & .kak-nachat-block {
+      &__title {
+        text-align: left;
+        font-size: 46px;
+        line-height: 90%;
+      }
+      &__description {
+        text-align: left;
+        font-size: 14px;
+      }
+    }
+  }
   &__item {
     width: 250px;
     height: 350px;
@@ -200,7 +346,7 @@
             right: -16px;
             left: -16px;
           }
-        } 
+        }
         &__for {
           font-weight: 700;
           text-transform: none;
@@ -230,13 +376,14 @@
     width: fit-content;
     background-color: white;
     position: relative;
+
     & span {
       position: relative;
       z-index: 11;
     }
     &::before {
-      content: '';
-      background-color: #FFFFFF;
+      content: "";
+      background-color: #ffffff;
       top: -8px;
       bottom: -8px;
       left: -10px;
@@ -252,7 +399,7 @@
       left: -12px;
     }
   }
-  
+
   &__for {
     font-weight: 900;
     font-size: 18px;
@@ -267,7 +414,7 @@
     font-size: 12px;
     line-height: 1;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 7px 10px 5px;
     border-radius: 12px;
     margin-top: 20px;
@@ -285,19 +432,26 @@
     margin-top: 40px;
     overflow: visible;
     height: fit-content;
+    @include mobile {
+      margin-top: 30px;
+    }
     &-wrapper {
       display: flex;
       justify-content: center;
       gap: 10%;
       width: 100%;
       padding-top: 10px;
+      @include tablet {
+        justify-content: flex-start;
+        gap: 0;
+      }
     }
     &-slide {
       width: 250px;
       height: 350px;
       overflow: visible;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         z-index: 0;
         width: 228px;
@@ -319,7 +473,7 @@
       &:nth-child(2n - 1) {
         & .memory {
           &__size {
-          background-color: $greenLight;
+            background-color: $greenLight;
           }
           &__title {
             color: $greenLight;
@@ -329,7 +483,7 @@
       &:nth-child(2n) {
         & .memory {
           &__size {
-          background-color: $brown;
+            background-color: $brown;
           }
           &__title {
             color: $brown;

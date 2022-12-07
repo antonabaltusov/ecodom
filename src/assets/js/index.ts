@@ -8,8 +8,9 @@ import "./polifils";
 import startVideo from "./video";
 import popupFunc from "./popup";
 import productHover from "./product-hover";
-import sliderMobile from "./slider-mobile";
+import sliderMobile, { sliderMemory } from "./slider-mobile";
 import slider from "./slider";
+import "./video-popup";
 const windowWidth = document.documentElement.clientWidth;
 // if (windowWidth < 1200 && windowWidth >= 390) {
 //   const viewport = document.querySelector("meta[name=viewport]");
@@ -29,4 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
   popupFunc();
   sliderMobile();
   slider();
+  sliderMemory();
 });

@@ -5,6 +5,16 @@ kak-nachat: 'true'
 {{!< body }}
 <div class="header-craft">
   <div class="container">
+    <nav class="breadcrumbs only-tablet">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="../../pages/index/index.hbs">{{> "icons/home"}}</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="">Как начать разделять?</a>
+        </li>
+      </ul>
+    </nav>
     <h1 class="header-craft__title">как начать разделять?</h1>
     <div class="header-craft__description">5 простых шагов</div>
   </div>
@@ -53,7 +63,7 @@ kak-nachat: 'true'
         <div class="kak-nachat__item-number">04</div>
         <div class="kak-nachat__item-text">
           <h2 class="kak-nachat__item-title"><b>Спрессуйте всё,</b><br>
-            что возможно</h2>
+            что&nbsp;возможно</h2>
           <div class="kak-nachat__item-description">Большую часть отходов при желании можно уменьшить<br>
             в объёме. Это сэкономит место в контейнере, поможет<br>
             реже выносить отходы и сдавать больше сырья</div>
@@ -65,7 +75,7 @@ kak-nachat: 'true'
         <div class="kak-nachat__item-number">05</div>
         <div class="kak-nachat__item-text">
           <h2 class="kak-nachat__item-title"><b>Отнесите собранное</b><br>
-            в Экодом или<br>
+            в&nbsp;Экодом или<br>
             контейнер у дома</h2>
           <div class="kak-nachat__item-description">В спецбак жёлто-зелёного цвета во дворе можно<br>
             сдать пластик, стекло, металл, а Экодом принимает<br>
@@ -77,11 +87,12 @@ kak-nachat: 'true'
   </ul>
    <div class="kak-nachat-video kak-nachat-block">
       <div class="kak-nachat-block__title">Простая инструкция о том,<br>
-        <b>как начать разделять отходы?</b></div>
+        <b>Как начать разделять отходы?</b></div>
         {{> "video/video" 
           img="../../assets/img/kak-nachat-video.png"
           time="15"
           description="кликайте, чтобы посмотреть видео"
+          videoId='Dd9I487N96Y'
           }}
   </div>
   <div class="memory kak-nachat-block">
@@ -98,7 +109,7 @@ kak-nachat: 'true'
           </div>
           <div class="memory__for">для экодома</div>
           <div class="memory__size">PDF, 2,4 мб</div>
-          <a class="button" href="#" target="_blank">Скачать</a>
+          <a class="button" href="https://disk.yandex.ru/d/PT920WBPVyEMJA" target="_blank">Скачать</a>
           </div>
         </div>
         <div class="swiper-slide">
@@ -110,7 +121,7 @@ kak-nachat: 'true'
             </div>
             <div class="memory__for">для контейнера<br> у дома</div>
             <div class="memory__size">PDF, 2,4 мб</div>
-            <a class="button" href="#" target="_blank">Скачать</a>
+            <a class="button" href="https://disk.yandex.ru/d/PT920WBPVyEMJA" target="_blank">Скачать</a>
           </div>
         </div>
         <div class="swiper-slide">
@@ -121,7 +132,7 @@ kak-nachat: 'true'
           </div>
           <div class="memory__for">для общественных<br> мест</div>
           <div class="memory__size">PDF, 2,4 мб</div>
-          <a class="button" href="#" target="_blank">Скачать</a>
+          <a class="button" href="https://disk.yandex.ru/d/PT920WBPVyEMJA" target="_blank">Скачать</a>
           </div>
         </div>
       </div>
@@ -134,7 +145,12 @@ kak-nachat: 'true'
       <div class="kak-nachat-welcome__title"><b>бесплатную<br>
                                             экскурсию</b><br>
                                             в экодом</div>
-      <div class="kak-nachat-welcome__description">Каждую неделю во вторник, среду и четверг.<br>
+                                            <div class="kak-nachat-welcome__img">
+      <div class="img-wrapper">
+        <img src="../../assets/img/kak-nachat-welcome__img.png" alt="фото">
+      </div>
+    </div>
+      <div class="kak-nachat-welcome__description">Каждую неделю во вторник, среду и&nbsp;четверг.<br>
         Для детей и взрослых группами от 10 до 25 человек</div>
       <div class="kak-nachat-welcome__place">Место проведения</div>
       <div class="kak-nachat-welcome__text">ул. Холмогорова, 11<br>
@@ -145,11 +161,7 @@ kak-nachat: 'true'
         <a href="../welcome-to-ecodom/welcome-to-ecodom.hbs" class="kak-nachat-welcome__link link">Подробнее об экскурсии</a>
       </div>
     </div>
+    <div class="kak-nachat-welcome__img"></div>
     
-    <div class="kak-nachat-welcome__img">
-      <div class="img-wrapper">
-        <img src="../../assets/img/kak-nachat-welcome__img.png" alt="фото">
-      </div>
-    </div>
   </div>
 </div>
