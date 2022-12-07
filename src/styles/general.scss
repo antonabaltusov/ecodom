@@ -233,7 +233,8 @@ body.modal-active {
   padding-bottom: 185px;
   margin-bottom: -50px;
   background: url(../assets/img/header-craft.png);
-  background-size: cover;
+  background-size: auto 93%;
+  background-repeat: no-repeat;
   position: relative;
   @include tablet {
     margin-top: -153px;
@@ -248,7 +249,7 @@ body.modal-active {
     position: absolute;
     height: 20px;
     width: 100%;
-    bottom: -1px;
+    top: 90%;
     left: 0;
     background: linear-gradient(rgba(255, 255, 255, 0), white);
   }
@@ -277,6 +278,9 @@ body.modal-active {
   height: 0;
   &-wrapper {
     width: 80%;
+    @include mobile {
+      width: 98%;
+    }
   }
   & iframe {
     position: absolute;
