@@ -232,8 +232,8 @@ body.modal-active {
   padding-top: 180px;
   padding-bottom: 185px;
   margin-bottom: -50px;
-  background: url(../assets/img/header-craft.png);
-  background-size: auto 93%;
+  background-image: url(../assets/img/header-craft.png);
+  background-size: 100% 93%;
   background-repeat: no-repeat;
   position: relative;
   @include tablet {
@@ -243,6 +243,8 @@ body.modal-active {
     padding-top: 154px;
     padding-bottom: 134px;
     margin-bottom: -30;
+    background-size: 100% 95%;
+    background-image: url(../assets/img/header-craft-mob.png);
   }
   &::before {
     content: "";
