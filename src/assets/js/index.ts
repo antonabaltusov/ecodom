@@ -11,7 +11,7 @@ import productHover from "./product-hover";
 import sliderMobile, { sliderMemory } from "./slider-mobile";
 import slider from "./slider";
 import "./video-popup";
-import AOS from "aos";
+import AOS from "../../../node_modules/aos/dist/aos";
 import Rellax from "rellax";
 import { blockWithSlider } from "./blockWithSlider";
 import "./map";
