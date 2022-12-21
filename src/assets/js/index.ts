@@ -1,18 +1,14 @@
 import "./jquery3-6-0";
 import "./viewport";
-import focusBlur from "./focusBlur";
 import select from "./select";
-import search from "./search";
 import mobileMenu from "./mobile-menu";
 import "./polifils";
-import startVideo from "./video";
 import popupFunc from "./popup";
-import productHover from "./product-hover";
 import sliderMobile, { sliderMemory } from "./slider-mobile";
 import slider from "./slider";
 import "./video-popup";
 import AOS from "../../../node_modules/aos/dist/aos";
-import Rellax from "rellax";
+import Rellax from "../../../node_modules/rellax/rellax";
 import { blockWithSlider } from "./blockWithSlider";
 import "./map";
 document.addEventListener("DOMContentLoaded", () => {
@@ -26,11 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
   });
-  // focusBlur();
-
-  // search();
+  document.querySelectorAll(".smooth-scroll").forEach((el) => {
+    el.addEventListener("click", () => {
+      const id = el.getAttribute("data-link");
+      if (id) {
+        const yOffset = -10;
+        const targetEl = document.querySelector(id);
+        if (targetEl) {
+          const y =
+            targetEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }
+    });
+  });
   mobileMenu();
-  // startVideo();
   popupFunc();
   sliderMobile();
   slider();
@@ -49,17 +55,3 @@ window.onload = () => {
     });
   }
 };
-document.querySelectorAll(".smooth-scroll").forEach((el) => {
-  el.addEventListener("click", () => {
-    const id = el.getAttribute("data-link");
-    if (id) {
-      const yOffset = -10;
-      const targetEl = document.querySelector(id);
-      if (targetEl) {
-        const y =
-          targetEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
-    }
-  });
-});
