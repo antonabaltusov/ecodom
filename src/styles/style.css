@@ -3,6 +3,7 @@
 @import '../assets/fonts/ProximaNova/fonts.css';
 @import './general.scss';
 @import './breadcrumbs.scss';
+@import '../../node_modules/aos/dist/aos.css';
 
 @import '../partials/nav-links/style.scss';
 @import '../partials/header/style.scss';
@@ -15,6 +16,9 @@
 @import '../partials/btn-menu-mob/style.scss';
 @import '../partials/menu-mob/style.scss';
 @import '../partials/slider-mobile/style.scss';
+@import '../partials/content__list/style.scss';
+@import '../partials/welcome/style.scss';
+@import '../partials/product/style.scss';
 
 
 @import '../pages/documents/style.scss';
@@ -22,5 +26,7 @@
 @import '../pages/heplfull/style.scss';
 @import '../pages/kak-nachat/style.scss';
 @import '../pages/news/style.scss';
+@import '../pages/index/style.scss';
+@import '../pages/privacy/style.scss';
 
 @import '../assets/js/swiper/swiper-bundle.min.css'

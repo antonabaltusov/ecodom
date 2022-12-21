@@ -1,0 +1,224 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.content {
+  &__list {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    @include note {
+      padding: 20px 20px 30px;
+    }
+    @include mobile {
+      padding-top: 40px;
+    }
+  }
+  &__item {
+    letter-spacing: -0.02em;
+    position: relative;
+    overflow: hidden;
+    &:not(:last-child) {
+      padding-bottom: 31px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        overflow: hidden;
+        background-image: url(../../assets/img/main/what-send-item-border.svg);
+        @include note {
+          display: none;
+        }
+      }
+      @include note {
+        padding-bottom: 30px;
+      }
+    }
+    &:not(:first-child) {
+      padding-top: 29px;
+      @include note {
+        padding-top: 0;
+      }
+    }
+  }
+  &__main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    @include note {
+      font-size: 18px;
+      line-height: 130%;
+    }
+  }
+  &__mark-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: 6px;
+    @include note {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: $green;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    & b {
+      font-size: 34px;
+      line-height: 100%;
+    }
+    & small {
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      opacity: 0.9;
+      color: black;
+      @include note {
+        font-size: 12px;
+      }
+    }
+    @include note {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+  }
+  &__mark {
+    margin-left: 36px;
+    height: 40px;
+    width: 40px;
+    background-color: $greenLight;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      object-fit: contain;
+      object-position: center;
+      max-width: 55%;
+      max-height: 55%;
+    }
+    @include note {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  &__img {
+    width: 200px;
+    max-height: 200px;
+    height: 100%;
+    z-index: 1;
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    @include note {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 170px;
+      height: 140px;
+    }
+  }
+  &__rules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 10;
+    font-size: 14px;
+    line-height: 130%;
+    @include tablet {
+      & br {
+        display: none;
+      }
+    }
+    @include note {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      font-size: 12px;
+    }
+    &__title {
+      font-weight: 700;
+      text-transform: uppercase;
+      @include note {
+        font-size: 12px;
+      }
+    }
+    &__item {
+      margin-top: 10px;
+      font-weight: 400;
+    }
+    &-plus {
+      padding-right: 50px;
+      & .content__rules__title {
+        color: $green;
+      }
+      @include tablet {
+        padding-right: 15px;
+      }
+    }
+    &-minus {
+      & .content__rules__title {
+        color: #e31345;
+      }
+      & .content__rules__item {
+        padding-left: 22px;
+        position: relative;
+        &::before {
+          content: "";
+          height: 15px;
+          width: 15px;
+          position: absolute;
+          top: 0.05em;
+          left: 0;
+          background-image: url(../../assets/img/main/rules-minus.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          @include note {
+            width: 13px;
+            height: 13px;
+          }
+        }
+        @include note {
+          padding-left: 18px;
+        }
+      }
+    }
+  }
+  &__warn {
+    margin-top: 30px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    padding: 20px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    &::before {
+      content: url(../../assets/img/main/warn.svg);
+      display: block;
+      margin-right: 10px;
+      margin-top: 3px;
+    }
+    @include note {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+  }
+}

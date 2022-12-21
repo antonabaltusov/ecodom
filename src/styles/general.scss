@@ -1,7 +1,9 @@
 @use "sass:math";
 @import "./mixins";
 @import "./variables";
-
+// html {
+//   scroll-behavior: smooth;
+// }
 body {
   font-family: "Proxima Nova";
   display: flex;
@@ -11,6 +13,9 @@ body {
 }
 button {
   font-family: "Proxima Nova";
+}
+.visibility-hidden {
+  visibility: hidden;
 }
 .bg-craft::before {
   position: fixed;
@@ -98,6 +103,7 @@ button:hover {
   color: #ffffff;
   &:hover {
     background: $brown;
+    cursor: pointer;
   }
 }
 .button.vk {
@@ -232,29 +238,38 @@ body.modal-active {
   padding-top: 180px;
   padding-bottom: 185px;
   margin-bottom: -50px;
-  background-image: url(../assets/img/header-craft.png);
-  background-size: 100% 93%;
-  background-repeat: no-repeat;
+  background-image: url(../assets/img/bg-craft.png);
   position: relative;
   @include tablet {
     margin-top: -153px;
-    background-size: auto 93%;
   }
-  @include mobile {
-    padding-top: 154px;
-    padding-bottom: 134px;
-    margin-bottom: -30;
-    background-size: 100% 95%;
-    background-image: url(../assets/img/header-craft-mob.png);
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 433px;
+    background-image: url(../assets/img/header-craft.png);
+    background-size: 100% 100%;
+    @include mobile {
+      background-image: url(../assets/img/header-craft-mob.png);
+      background-position: bottom;
+    }
   }
   &::before {
     content: "";
     position: absolute;
     height: 20px;
     width: 100%;
-    top: 90%;
+    top: calc(100% - 19px);
     left: 0;
+    z-index: 1;
     background: linear-gradient(rgba(255, 255, 255, 0), white);
+    @include mobile {
+      height: 40px;
+      top: calc(100% - 39px);
+    }
   }
   &__title {
     font-weight: 900;
@@ -291,5 +306,111 @@ body.modal-active {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+.bg-gray {
+  background-image: url(../assets/img/bg-craft.png);
+  padding: 200px 0 340px;
+  margin-bottom: -100px;
+  position: relative;
+  @include mobile {
+    padding: 135px 0 140px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  &__top,
+  &__bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @include tablet {
+      background-size: cover;
+    }
+    &::before {
+      content: "";
+      height: 20px;
+      position: absolute;
+      background: linear-gradient(#fcfdfd, white);
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__top {
+    background-image: url(../assets/img/header-craft.png);
+    top: 0;
+    height: 433px;
+    transform: scale(-1, -1);
+    @include mobile {
+      background-image: url(../assets/img/header-craft-mob.png);
+    }
+  }
+  &__bottom {
+    background-image: url(../assets/img/header-craft-bottom.png);
+    background-position: bottom;
+    bottom: 0;
+    height: 249px;
+    transform: scale(-1, -1);
+    @include mobile {
+      background-image: url(../assets/img/header-craft-mob.png);
+      transform: scale(1, 1);
+      z-index: 0;
+    }
+    &::before {
+      bottom: auto;
+      top: -10px;
+      height: 70px;
+      background: linear-gradient(to top, #fcfdfd, white);
+      @include mobile {
+        top: auto;
+        bottom: -1px;
+        height: 20px;
+        background: linear-gradient(#fcfdfd, white);
+      }
+    }
+  }
+}
+.bg-brown {
+  background-image: url(../assets/img/main/bg-craft-paper-brown.png);
+  background-repeat: repeat;
+  padding-top: 250px;
+  padding-bottom: 230px;
+  position: relative;
+  margin-bottom: 2px;
+  @include mobile {
+    margin-top: 60px;
+    padding: 130px 0;
+    background-size: 100% auto;
+  }
+  &__bg {
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    height: 250px;
+    z-index: 11;
+    background-color: white;
+    background-image: url(../assets/img/main/what-send-bg.png);
+    @media (max-width: 1900px) {
+      background-size: cover;
+    }
+    &-down {
+      top: auto;
+      bottom: -1px;
+      transform: rotate(180deg);
+      height: 230px;
+    }
+    @include mobile {
+      height: 70px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+    @include tablet {
+    }
   }
 }

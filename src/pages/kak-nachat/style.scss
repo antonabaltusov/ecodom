@@ -6,6 +6,13 @@
   @include tablet {
     padding-top: 0;
   }
+  &-header {
+    @include mobile {
+      padding-top: 153px;
+      padding-bottom: 90px;
+      margin-bottom: 50px;
+    }
+  }
   &-block {
     &__title {
       font-weight: 800;
@@ -162,136 +169,6 @@
       }
       & svg {
         margin-right: 9px;
-      }
-    }
-  }
-  &-welcome {
-    display: flex;
-    position: relative;
-    @include tablet {
-      display: block;
-    }
-    &__info {
-      width: 44.25%;
-      @include tablet {
-        width: 100%;
-        text-align: center;
-      }
-      & .kak-nachat-welcome__img {
-        position: absolute;
-        width: calc(100% - 44.25%);
-        right: 0;
-        top: 7%;
-        @include tablet {
-          position: static;
-          width: 100%;
-        }
-      }
-    }
-    &__pretitle {
-      font-weight: 900;
-      font-size: 30px;
-      line-height: 110%;
-      text-transform: uppercase;
-      color: #021c13;
-      margin-bottom: 10px;
-      @include mobile {
-        font-size: 20px;
-      }
-    }
-    &__title {
-      font-weight: 900;
-      font-size: 60px;
-      line-height: 110%;
-      text-transform: uppercase;
-      color: #021c13;
-      margin-bottom: 22px;
-      @include mobile {
-        font-size: 20px;
-        & br {
-          display: none;
-        }
-      }
-      & b {
-        color: $brown;
-        @include mobile {
-          font-size: 38px;
-          line-height: 1;
-          display: block;
-          margin-bottom: 10px;
-        }
-      }
-    }
-    &__description {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 130%;
-      letter-spacing: -0.02em;
-      margin-bottom: 28px;
-      @include mobile {
-        & br {
-          display: none;
-        }
-      }
-    }
-    &__place {
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 130%;
-      letter-spacing: -0.02em;
-      text-transform: uppercase;
-      color: $green;
-      margin-bottom: 10px;
-    }
-    &__text {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 130%;
-      letter-spacing: -0.02em;
-      margin-bottom: 20px;
-      @include mobile {
-        margin-bottom: 30px;
-      }
-      & span {
-        color: #9d9d9d;
-      }
-    }
-    &__buttons {
-      margin-top: 22px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @include tablet {
-        margin: 20px auto 0;
-      }
-      @include mobile {
-        margin-top: -10px;
-      }
-    }
-    & .button {
-      width: 100%;
-    }
-    &__link {
-      margin-top: 20px;
-    }
-    &__img {
-      flex: 1;
-      padding-right: 8%;
-      @include tablet {
-        padding-right: 0;
-        margin: 30px 0;
-        width: 80%;
-      }
-      & .img-wrapper {
-        padding-bottom: 71.4%;
-        background: #d9d9d9;
-        border-radius: 20px;
-        transform: rotate(-8.75deg);
-        @include tablet {
-          transform: none;
-          padding-bottom: 66.66%;
-        }
       }
     }
   }

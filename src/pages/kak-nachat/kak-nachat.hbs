@@ -3,7 +3,7 @@ kak-nachat: 'true'
 ---
 
 {{!< body }}
-<div class="header-craft">
+<div class="header-craft kak-nachat-header">
   <div class="container">
     <nav class="breadcrumbs only-tablet">
       <ul class="breadcrumbs__list">
@@ -32,7 +32,7 @@ kak-nachat: 'true'
             макулатуры. Постепенно добавляйте новые фракции</div>
         </div>
       </div>
-      <button class="button">{{> "icons/file"}}Что можно сдать в Экодом?</button>
+      <a target="_blank" href="https://disk.yandex.ru/d/vU0m7dESaPPElA" class="button">{{> "icons/file"}}Что можно сдать в Экодом?</a>
     </li>
     <li class="kak-nachat__item">
       <div class="kak-nachat__item-main">
@@ -82,7 +82,7 @@ kak-nachat: 'true'
             больше 30 видов сырья</div>
         </div>
       </div>
-      <button class="button">{{> "icons/file"}}Что можно класть в контейнер</button>
+      <a target="_blank" href="https://disk.yandex.ru/i/zuV-8yZwuNeRPw" class="button">{{> "icons/file"}}Что можно класть в контейнер</a>
     </li>
   </ul>
    <div class="kak-nachat-video kak-nachat-block">
@@ -109,7 +109,7 @@ kak-nachat: 'true'
           </div>
           <div class="memory__for">для экодома</div>
           <div class="memory__size">PDF, 2,4 мб</div>
-          <a class="button" href="https://disk.yandex.ru/d/PT920WBPVyEMJA" target="_blank">Скачать</a>
+          <a class="button" href="https://disk.yandex.ru/d/vU0m7dESaPPElA" target="_blank">Скачать</a>
           </div>
         </div>
         <div class="swiper-slide">
@@ -138,30 +138,5 @@ kak-nachat: 'true'
       </div>
     </div>
   </div>
- 
-  <div class="kak-nachat-welcome">
-    <div class="kak-nachat-welcome__info">
-      <div class="kak-nachat-welcome__pretitle">Приходите на</div>
-      <div class="kak-nachat-welcome__title"><b>бесплатную<br>
-                                            экскурсию</b><br>
-                                            в экодом</div>
-                                            <div class="kak-nachat-welcome__img">
-      <div class="img-wrapper">
-        <img src="../../assets/img/kak-nachat-welcome__img.png" alt="фото">
-      </div>
-    </div>
-      <div class="kak-nachat-welcome__description">Каждую неделю во вторник, среду и&nbsp;четверг.<br>
-        Для детей и взрослых группами от 10 до 25 человек</div>
-      <div class="kak-nachat-welcome__place">Место проведения</div>
-      <div class="kak-nachat-welcome__text">ул. Холмогорова, 11<br>
-      <span>Экодом у ТЦ «Талисман»</span></div>
-      <div class="kak-nachat-welcome__text">Нужна предварительная запись</div>
-      <div class="kak-nachat-welcome__buttons">
-        <a href="" class="button">Записаться на экскурсию</a>
-        <a href="../welcome-to-ecodom/welcome-to-ecodom.hbs" class="kak-nachat-welcome__link link">Подробнее об экскурсии</a>
-      </div>
-    </div>
-    <div class="kak-nachat-welcome__img"></div>
-    
-  </div>
+  {{> "welcome/welcome"}}
 </div>

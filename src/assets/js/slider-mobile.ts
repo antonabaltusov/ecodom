@@ -29,6 +29,9 @@ export default function sliderMobile() {
         768: {
           spaceBetween: 40,
         },
+        1100: {
+          spaceBetween: 100,
+        },
       },
     });
   }

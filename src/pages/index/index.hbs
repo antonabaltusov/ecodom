@@ -1,8 +1,719 @@
----
-main: 'true'
----
+{{! --- main: 'true' --- }}
 
 {{!< body }}
-<main>
-
-</main>
+<div class="main-header header-craft">
+  <div class="container">
+    <div class="main-header__times">
+      <div class="main-header__time plash plash-brown">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9 0.875C4.5125 0.875 0.875 4.5125 0.875 9C0.875 13.4875 4.5125 17.125 9 17.125C13.4875 17.125 17.125 13.4875 17.125 9C17.125 4.5125 13.4875 0.875 9 0.875ZM9.625 4C9.625 3.83424 9.55915 3.67527 9.44194 3.55806C9.32473 3.44085 9.16576 3.375 9 3.375C8.83424 3.375 8.67527 3.44085 8.55806 3.55806C8.44085 3.67527 8.375 3.83424 8.375 4V9C8.375 9.345 8.655 9.625 9 9.625H12.75C12.9158 9.625 13.0747 9.55915 13.1919 9.44194C13.3092 9.32473 13.375 9.16576 13.375 9C13.375 8.83424 13.3092 8.67527 13.1919 8.55806C13.0747 8.44085 12.9158 8.375 12.75 8.375H9.625V4Z"
+            fill="white"
+          ></path>
+        </svg>
+        Ежедневно с 10:00 до 20:00</div>
+      <div class="main-header__dinner">Обед с 14:00 до 15:00</div>
+    </div>
+    <h1 class="main-header__title">Выкупаем раздельно<br />
+      собранные отходы
+      <small>для дальнейшей переработки</small>
+      <div class="main-header__logo rellax" data-rellax-speed="1">
+        <img src="../../assets/img/main-header-logo.svg" alt="логотип" />
+      </div>
+    </h1>
+    <div class="main-header__buttons smooth-scroll" data-link="#priem">
+      <div class="button">Список принимаемого сырья</div>
+      <a class="link smooth-scroll" data-link="#block-map"><svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.54 22.351L11.61 22.391L11.638 22.407C11.749 22.467 11.8733 22.4985 11.9995 22.4985C12.1257 22.4985 12.25 22.467 12.361 22.407L12.389 22.392L12.46 22.351C12.8511 22.1191 13.2328 21.8716 13.604 21.609C14.5651 20.9305 15.463 20.1667 16.287 19.327C18.231 17.337 20.25 14.347 20.25 10.5C20.25 8.31196 19.3808 6.21354 17.8336 4.66637C16.2865 3.11919 14.188 2.25 12 2.25C9.81196 2.25 7.71354 3.11919 6.16637 4.66637C4.61919 6.21354 3.75 8.31196 3.75 10.5C3.75 14.346 5.77 17.337 7.713 19.327C8.53664 20.1667 9.43427 20.9304 10.395 21.609C10.7666 21.8716 11.1485 22.1191 11.54 22.351ZM12 13.5C12.7956 13.5 13.5587 13.1839 14.1213 12.6213C14.6839 12.0587 15 11.2956 15 10.5C15 9.70435 14.6839 8.94129 14.1213 8.37868C13.5587 7.81607 12.7956 7.5 12 7.5C11.2044 7.5 10.4413 7.81607 9.87868 8.37868C9.31607 8.94129 9 9.70435 9 10.5C9 11.2956 9.31607 12.0587 9.87868 12.6213C10.4413 13.1839 11.2044 13.5 12 13.5Z"
+            fill="#006140"
+          ></path>
+        </svg>
+        Адреса Экодомов</a>
+    </div>
+  </div>
+</div>
+<div class="main-video container">
+  <div class="main-video__title">
+    что такое<br>
+    <div class="main-video__title-big">
+      <svg width="350" height="75" viewBox="0 0 350 75">
+        <g style=" text-anchor: middle;">
+          <text class="svg-stroke" x="175" y="55">
+          экодом?
+          </text>
+          <text class="svg-text" x="175" y="55" style="fill: #c89b5a;">
+          экодом?
+          </text>
+        </g>
+      </svg>
+    </div>
+  </div>
+    {{> 'video/video' 
+      description="смотрите в коротком видео" 
+      videoId="qLFgWIYLQjM"
+      img='../../assets/img/main/video.png'
+      }}
+  <div class="main-video__after-video">
+    <div class="main-video__after-video__text">
+      Помогаем жителям Удмуртии заботиться об окружающей<br>
+среде, внедряя раздельный сбор отходов в республике 
+    </div>
+    <a href="../welcome-to-ecodom/welcome-to-ecodom.hbs" class="button">Записаться на экскурсию</a>
+  </div>
+</div>
+<div class="main-numbers">
+  <div class="main-numbers__list container">
+    <div class="main-numbers__item green">
+      <div class="name">Принимаем более</div>
+      <div class="number">30</div>
+      <div class="measure">видов отходов</div>
+    </div>
+    <div class="main-numbers__item brown">
+      <div class="name">Выкупаем по цене до</div>
+      <div class="number">20</div>
+      <div class="measure">руб / кг</div>
+    </div>
+  </div>
+  <div class="main-numbers__pay">
+    <div class="name">Оплачиваем</div>наличными<br>
+      <b>или на карту</b>
+  </div>
+  <div class="bg-lists bg-lists-1"></div>
+  <div class="bg-lists bg-lists-2"></div>
+</div>
+<div class="what-send bg-brown">
+  <div class="bg-brown__bg"></div>
+  <div class="bg-brown__bg bg-brown__bg-down"></div>
+  <div class="container" id="priem">
+    <div class="what-send__title"><div class="what-send__title-mob">Что<br> можно сдать<br> в Экодом?</div><b>Что можно<br> сдать в&nbsp;Экодом?</b><small>Вы удивитесь, как много всего</small></div>
+    <ul select-list class="what-send__list">
+      <li select-item class="what-send__item active">
+        <button select-button class="what-send__button">Пластик{{> "icons/button-array"}}</button>
+        <div class="what-send__content">
+          {{> "content__list/content__list"}}
+        </div>
+      </li>
+      <li select-item class="what-send__item">
+        <button select-button class="what-send__button">Пакеты и пленка{{> "icons/button-array"}}</button>
+        <div class="what-send__content">
+          {{> "content__list/content__list"}}
+        </div>
+      </li>
+      <li select-item class="what-send__item">
+        <button select-button class="what-send__button">Стекло и металл{{> "icons/button-array"}}</button>
+        <div class="what-send__content">
+          {{> "content__list/content__list"}}
+        </div>
+      </li>
+      <li select-item class="what-send__item">
+        <button select-button class="what-send__button">Макулатура и тетрапак{{> "icons/button-array"}}</button>
+        <div class="what-send__content">
+          {{> "content__list/content__list"}}
+        </div>
+      </li>
+      <li select-item class="what-send__item">
+        <button select-button class="what-send__button">Одежда и текстиль{{> "icons/button-array"}}</button>
+        <div class="what-send__content">
+          {{> "content__list/content__list"}}
+        </div>
+      </li>
+      <li select-item class="what-send__item">
+        <button select-button class="what-send__button">Бытовая техника<br>и электроника{{> "icons/button-array"}}</button>
+        <div class="what-send__content">
+          {{> "content__list/content__list"}}
+        </div>
+      </li>
+      <li select-item class="what-send__item">
+        <button select-button class="what-send__button">Мебель, сантехника,<br> шины, ветки и пр.{{> "icons/button-array"}}</button>
+        <div class="what-send__content">
+          {{> "content__list/content__list"}}
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="quest container">
+  <div class="quest__list">
+    <div class="quest__item">
+      <div class="bg bg-quest"></div>
+      <div class="quest__name">
+        <small>Что делать если&nbsp;я&nbsp;не&nbsp;знаю</small>
+        <b class="brown">можно ли<br> сдать «это»?</b>
+      </div>
+      <div class="quest__answer">
+        Просто пришлите фото той вещи, которую хотите<br>
+        сдать, в сообщения нашей группы в ВК, и мы<br>
+        подскажем, примет ли ее Экодом
+      </div>
+      <a href="https://vk.me/regoperatorudmurtia" class="button">{{> "icons/camera"}}Отправить фото</a>
+    </div>
+    <div class="quest__item">
+      <div class="bg bg-batarea"></div>
+      <div class="bg bg-lampa"></div>
+      <div class="quest__name">
+        <small class="brown">Куда сдать</small>
+        <b>батарейки,
+          градусники,
+          лампочки</b>
+          и прочие опасные отходы?
+      </div>
+      <div class="quest__answer">
+        Опасные отходы Экодома не принимают, но специально<br>
+        для вас мы составили карту с бесплатными пунктами<br>
+        приёма таких отходов
+      </div>
+      <a class="button smooth-scroll" data-link="#block-map">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.61667 18.6258L9.675 18.6592L9.69833 18.6725C9.79086 18.7225 9.89439 18.7487 9.99958 18.7487C10.1048 18.7487 10.2083 18.7225 10.3008 18.6725L10.3242 18.66L10.3833 18.6258C10.7093 18.4326 11.0273 18.2263 11.3367 18.0075C12.1376 17.4421 12.8859 16.8056 13.5725 16.1058C15.1925 14.4475 16.875 11.9558 16.875 8.75C16.875 6.92664 16.1507 5.17795 14.8614 3.88864C13.572 2.59933 11.8234 1.875 10 1.875C8.17664 1.875 6.42795 2.59933 5.13864 3.88864C3.84933 5.17795 3.125 6.92664 3.125 8.75C3.125 11.955 4.80833 14.4475 6.4275 16.1058C7.11387 16.8056 7.86189 17.442 8.6625 18.0075C8.97214 18.2263 9.29045 18.4326 9.61667 18.6258ZM10 11.25C10.663 11.25 11.2989 10.9866 11.7678 10.5178C12.2366 10.0489 12.5 9.41304 12.5 8.75C12.5 8.08696 12.2366 7.45107 11.7678 6.98223C11.2989 6.51339 10.663 6.25 10 6.25C9.33696 6.25 8.70107 6.51339 8.23223 6.98223C7.76339 7.45107 7.5 8.08696 7.5 8.75C7.5 9.41304 7.76339 10.0489 8.23223 10.5178C8.70107 10.9866 9.33696 11.25 10 11.25Z" fill="white"/>
+        </svg>Открыть карту
+      </a>
+    </div>
+  </div>
+</div>
+<div class="bg-gray map-block" id="show-list">
+  <div class="bg-gray__top"></div>
+  <div class="bg-gray__bottom"></div>
+  <div class="container" id="block-map">
+    <div class="map-block__title">
+      Адреса<br>
+      экодомов
+      <small>и режим работы</small>
+    </div>
+    <div class="map-block__buttons">
+      <button type="button" id="show-list">Показать списком</button>
+      <button type="button" id="show-map">Показать карту</button>
+    </div>
+    <div class="map-block__list">
+      <div>
+        <div class="map-block__item">
+          <div class="map-block__city">Ижевск</div>
+          <ul>
+            <li>
+              <div class="map-block__types">
+                <div class="map-block__type">экодом</div>
+              </div>
+              <div class="map-block__adres" data-map="[56.852667, 53.294562]">ул. Молодежная, 107а</div>
+              <div class="map-block__dop">У гипермаркета «Магнит»</div>
+            </li>
+            <li>
+              <div class="map-block__types">
+                <div class="map-block__type">экодом</div>
+              </div>
+              <div class="map-block__adres" data-map="[56.877532, 53.203112]">ул. Холмогорова, 11</div>
+              <div class="map-block__dop">У ТЦ «Талисман»</div>
+            </li>
+            <li>
+              <div class="map-block__types">
+                <div class="map-block__type">экодом</div>
+              </div>
+              <div class="map-block__adres" data-map="[56.838916, 53.309642]">ул. Камбарская, 110</div>
+              <div class="map-block__dop">У ТЦ «Лента»</div>
+            </li>
+            <li>
+              <div class="map-block__types">
+                <div class="map-block__type">экодом</div>
+                <div class="map-block__type brown">экопост</div>
+              </div>
+              <div class="map-block__adres" data-map="[56.807228, 53.175391]">ул. Короткая, 31а</div>
+              <div class="map-block__dop">На перекрестке ул. Депутатская-Короткая</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="map-block__item">
+          <div class="map-block__city">Вавож</div>
+          <ul>
+            <li>
+              <div class="map-block__types">
+                <div class="map-block__type">экопост</div>
+              </div>
+              <div class="map-block__adres" data-map="[56.763574, 51.917575]">ул. Интернациональная</div>
+              <div class="map-block__dop">Рядом с бывшим автовокзалом</div>
+              <div class="map-block__warn">
+                Режим работы, список и цены принимаемого<br> 
+                сырья могут отличаться от ижевских Экодомов
+                <a href="#">Смотреть подробнее в ВК</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="map-block__item">
+          <div class="map-block__city">сарапул</div>
+          <ul>
+            <li>
+              <div class="map-block__types">
+                <div class="map-block__type">скоро открытие</div>
+              </div>
+              <div class="map-block__adres" data-map="[56.467394, 53.806992]">ул. Азина, 55а</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="map-block__info">
+      <div class="map-block__info-block">
+        <div class="map-block__info-title">Режим работы в Ижевске</div>
+        <div class="map-block__info-time">
+          <div>
+            <div class="time">с <span>10:00</span> до <span>20:00</span></div>
+            <div>Ежедневно, без выходных</div>
+          </div>
+          <div>
+            <div class="pause">Обед: с 14:00 до 15:00</div>
+            <div class="pause">Технические перерывы:<br>
+            с 11:45 до 12:00 с 16:45 до 17:00</div>
+          </div>
+        </div>
+      </div>
+       <div class="map-block__info-block">
+        <div>
+          <div class="map-block__type">экодом</div>
+          <div class="map-block__type-about">Пункт выкупа более 30<br>
+            видов вторички: пластика,<br>
+            стекла, металла и т.п.</div>
+        </div>
+        <div>
+          <div class="map-block__type brown">экопост</div>
+          <div class="map-block__type-about">Пункт приёма более<br>
+            30 видов отходов, в&nbsp;том<br>
+            числе крупногабарита</div>
+        </div>
+       </div>
+    </div>
+    <div id="map"></div>
+  </div>
+</div>
+<div class="inside container">
+  <div class="inside__title"><b>Экодом</b> изнутри</div>
+  {{> "slider/slider"}}
+</div>
+<div class="container">
+  <div class="people-wait">
+    <div class="people-wait__dctp"></div>
+    <div class="people-wait__content">
+      <div class="people-wait__title">Люди ждут<br>
+        «Экодома»</div>
+      <div class="people-wait__where">во всех городах<br>
+        и селах Удмуртии</div>
+        <div>
+          <p>Экодома — это больше, чем просто пункты приёма. Это сервис<br>
+          для экологизации региона. Благодаря этому проекту у жителей<br>
+          и компаний Удмуртии есть возможность соприкоснуться с<br>
+          новыми смыслами нашего времени и прокачать экологический<br>
+          интеллект.</p>
+          <p>Каждый гость нашего «Экодома» — продавец в молодом<br>
+          и бурно развивающемся секторе российской экономики, часть<br>
+          создающейся прослойки цивилизованного общества «человек<br>
+          разделяющий.</p>
+        </div>
+        <div class="people-wait__who">
+          <div class="people-wait__who-img">
+            <img src="../../assets/img/main/people-wait.png" alt="Иван Маринин">
+          </div>
+          <div>
+            <div class="people-wait__who-name">Иван Маринин</div>
+            <div class="people-wait__who-work">Руководитель регоператора<br>
+              Удмуртии ООО «Спецавтохозяйство»</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="block-with-slider container">
+  <div class="block-with-slider__top">
+    <div class="block-with-slider__title">наши достижения</div>
+    <div class="block-with-slider-buttons">
+      <div class="button-prev">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21 41.3125C32.2188 41.3125 41.3125 32.2188 41.3125 21C41.3125 9.78125 32.2188 0.687499 21 0.687498C9.78125 0.687497 0.687503 9.78125 0.687502 21C0.687501 32.2187 9.78125 41.3125 21 41.3125ZM29.9167 22.1042C30.2093 21.8112 30.3736 21.4141 30.3736 21C30.3736 20.5859 30.2093 20.1888 29.9167 19.8958L23.6667 13.6458C23.5236 13.4923 23.3511 13.3692 23.1595 13.2838C22.9678 13.1984 22.7609 13.1525 22.5511 13.1488C22.3413 13.1451 22.1329 13.1837 21.9383 13.2622C21.7438 13.3408 21.567 13.4578 21.4187 13.6062C21.2703 13.7545 21.1533 13.9313 21.0747 14.1258C20.9962 14.3204 20.9576 14.5288 20.9613 14.7386C20.965 14.9484 21.0109 15.1553 21.0963 15.347C21.1817 15.5386 21.3048 15.7111 21.4583 15.8542L25.0417 19.4375L13.1875 19.4375C12.7731 19.4375 12.3757 19.6021 12.0826 19.8951C11.7896 20.1882 11.625 20.5856 11.625 21C11.625 21.4144 11.7896 21.8118 12.0826 22.1049C12.3757 22.3979 12.7731 22.5625 13.1875 22.5625L25.0417 22.5625L21.4583 26.1458C21.1823 26.442 21.0321 26.8338 21.0392 27.2386C21.0464 27.6434 21.2103 28.0296 21.4966 28.3159C21.7829 28.6022 22.1691 28.7661 22.5739 28.7733C22.9787 28.7804 23.3705 28.6302 23.6667 28.3542L29.9167 22.1042Z" fill="#78C887"/>
+        </svg>
+      </div>
+      <div class="button-next">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21 41.3125C32.2188 41.3125 41.3125 32.2188 41.3125 21C41.3125 9.78125 32.2188 0.687499 21 0.687498C9.78125 0.687497 0.687503 9.78125 0.687502 21C0.687501 32.2187 9.78125 41.3125 21 41.3125ZM29.9167 22.1042C30.2093 21.8112 30.3736 21.4141 30.3736 21C30.3736 20.5859 30.2093 20.1888 29.9167 19.8958L23.6667 13.6458C23.5236 13.4923 23.3511 13.3692 23.1595 13.2838C22.9678 13.1984 22.7609 13.1525 22.5511 13.1488C22.3413 13.1451 22.1329 13.1837 21.9383 13.2622C21.7438 13.3408 21.567 13.4578 21.4187 13.6062C21.2703 13.7545 21.1533 13.9313 21.0747 14.1258C20.9962 14.3204 20.9576 14.5288 20.9613 14.7386C20.965 14.9484 21.0109 15.1553 21.0963 15.347C21.1817 15.5386 21.3048 15.7111 21.4583 15.8542L25.0417 19.4375L13.1875 19.4375C12.7731 19.4375 12.3757 19.6021 12.0826 19.8951C11.7896 20.1882 11.625 20.5856 11.625 21C11.625 21.4144 11.7896 21.8118 12.0826 22.1049C12.3757 22.3979 12.7731 22.5625 13.1875 22.5625L25.0417 22.5625L21.4583 26.1458C21.1823 26.442 21.0321 26.8338 21.0392 27.2386C21.0464 27.6434 21.2103 28.0296 21.4966 28.3159C21.7829 28.6022 22.1691 28.7661 22.5739 28.7733C22.9787 28.7804 23.3705 28.6302 23.6667 28.3542L29.9167 22.1042Z" fill="#78C887"/>
+        </svg>
+      </div> 
+    </div>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./block-with-slider.0305bc12.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">Обладатели<br>
+          «Зелёной премии» 2021 года</div>
+          <div class="block-with-slider__slide-text">
+            <p>Получили «Зелёную премию-2021» за 5-е место в России среди 200 регоператоров в рейтинге ППК «Российский экологический оператор».</p>
+            <p>А также занимаем третью строчку в рейтинге «Российского экологического оператора» по информированности жителей о правилах раздельного сбора отходов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./news.9b0fc75d.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">Обладатели<br>
+            «Зелёной премии» 2021 года</div>
+          <div class="block-with-slider__slide-text">
+            <p>Получили «Зелёную премию-2021» за 5-е место в России среди 200 регоператоров в рейтинге ППК «Российский экологический оператор».</p>
+            <p>А также занимаем третью строчку в рейтинге «Российского экологического оператора» по информированности жителей о правилах раздельного сбора отходов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./block-with-slider.0305bc12.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">Обладатели<br>
+          «Зелёной премии» 2021 года</div>
+          <div class="block-with-slider__slide-text">
+            <p>Получили «Зелёную премию-2021» за 5-е место в России среди 200 регоператоров в рейтинге ППК «Российский экологический оператор».</p>
+            <p>А также занимаем третью строчку в рейтинге «Российского экологического оператора» по информированности жителей о правилах раздельного сбора отходов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./news.9b0fc75d.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">Обладатели<br>
+            «Зелёной премии» 2021 года</div>
+          <div class="block-with-slider__slide-text">
+            <p>Получили «Зелёную премию-2021» за 5-е место в России среди 200 регоператоров в рейтинге ППК «Российский экологический оператор».</p>
+            <p>А также занимаем третью строчку в рейтинге «Российского экологического оператора» по информированности жителей о правилах раздельного сбора отходов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-news container">
+  <div class="main-news__title">
+    Новости и&nbsp;события
+    <small>из жизни экодома</small>
+  </div>
+  <div class="article__list">
+    {{> "news-preview/news-preview" img="../../assets/img/news/news.png" title="#ЧистоПоУдмуртски на Байкале" dateString="16.09.2022"}}
+    {{> "news-preview/news-preview" img="../../assets/img/news/news.png" title="#ЧистоПоУдмуртски на Байкале" dateString="16.09.2022"}}
+    {{> "news-preview/news-preview" img="../../assets/img/news/news.png" title="#ЧистоПоУдмуртски на Байкале" dateString="16.09.2022"}}
+    {{> "news-preview/news-preview" img="../../assets/img/news/news.png" title="#ЧистоПоУдмуртски на Байкале" dateString="16.09.2022"}}
+  </div>
+  <a class="button" href="../heplfull/heplfull.hbs">Показать еще</a>
+</div>
+<div class="main-subscribe container">
+  <div class="main-subscribe__img">
+    <img src="../../assets/img/main/subscribe.png" alt="">
+    <img class="xs" src="../../assets/img/main/subscribe-xs.png" alt="">
+  </div>
+  <div class="main-subscribe__main">
+    <div class="main-subscribe__title">
+      <b>подпишитесь</b>
+      на нас в соцсетях
+      <small>и будьте в курсе всех новостей и&nbsp;предстоящих&nbsp;событий</small>
+    </div>
+    <div class="main-subscribe__buttons">
+      <a class="button vk" href="https://vk.com/regoperatorudmurtia" target="_blank">{{> "icons/vk" }}<span>сообщество в ВК</span></a>
+      <a class="button tg" href="https://t.me/regoperatorudmurtia" target="_blank">{{> "icons/tg" }}<span>Телеграм-канал</span></a>
+    </div>
+  </div>
+</div>
+<div class="some-more bg-gray">
+  <div class="bg-gray__top"></div>
+  <div class="bg-gray__bottom"></div>
+  <div class="container">
+    <div class="some-more__title">
+      <b>Экодом</b>
+      это гораздо больше
+      <small>чем просто пункт приёма вторресурсов</small>
+    </div>
+    <ul class="some-more__list">
+      <li class="some-more__item up" 
+        data-aos="fade-up"
+        data-aos-delay="200">
+        <div class="img-wrapper">
+          <img src="../../assets/img/main/some-more/1.png" alt="">
+        </div>
+        <div class="some-more__name">Просвещаем</div>
+        <div class="some-more__description">Обучаем раздельному сбору<br> детей и взрослых</div>
+      </li>
+      <li class="some-more__item"
+        data-aos="fade-up"
+        data-aos-delay="600">
+        <div class="img-wrapper">
+          <img src="../../assets/img/main/some-more/2.png" alt="">
+        </div>
+        <div class="some-more__name">создаем события</div>
+        <div class="some-more__description">Проводим фестивали<br> и экологизируем мероприятия</div>
+      </li>
+      <li class="some-more__item up"
+        data-aos="fade-up"
+        data-aos-delay="400">
+        <div class="img-wrapper">
+          <img src="../../assets/img/main/some-more/3.png" alt="">
+        </div>
+        <div class="some-more__name">Формируем<br>экотренды</div>
+        <div class="some-more__description">Создаем стильные вещи<br> из переработанных отходов</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="main-welcome container">
+{{> "welcome/welcome"}}
+</div>
+<div class="block-with-slider container">
+  <div class="block-with-slider__top">
+    <div class="block-with-slider__title brown">наши проекты</div>
+    <div class="block-with-slider-buttons">
+      <div class="button-prev">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21 41.3125C32.2188 41.3125 41.3125 32.2188 41.3125 21C41.3125 9.78125 32.2188 0.687499 21 0.687498C9.78125 0.687497 0.687503 9.78125 0.687502 21C0.687501 32.2187 9.78125 41.3125 21 41.3125ZM29.9167 22.1042C30.2093 21.8112 30.3736 21.4141 30.3736 21C30.3736 20.5859 30.2093 20.1888 29.9167 19.8958L23.6667 13.6458C23.5236 13.4923 23.3511 13.3692 23.1595 13.2838C22.9678 13.1984 22.7609 13.1525 22.5511 13.1488C22.3413 13.1451 22.1329 13.1837 21.9383 13.2622C21.7438 13.3408 21.567 13.4578 21.4187 13.6062C21.2703 13.7545 21.1533 13.9313 21.0747 14.1258C20.9962 14.3204 20.9576 14.5288 20.9613 14.7386C20.965 14.9484 21.0109 15.1553 21.0963 15.347C21.1817 15.5386 21.3048 15.7111 21.4583 15.8542L25.0417 19.4375L13.1875 19.4375C12.7731 19.4375 12.3757 19.6021 12.0826 19.8951C11.7896 20.1882 11.625 20.5856 11.625 21C11.625 21.4144 11.7896 21.8118 12.0826 22.1049C12.3757 22.3979 12.7731 22.5625 13.1875 22.5625L25.0417 22.5625L21.4583 26.1458C21.1823 26.442 21.0321 26.8338 21.0392 27.2386C21.0464 27.6434 21.2103 28.0296 21.4966 28.3159C21.7829 28.6022 22.1691 28.7661 22.5739 28.7733C22.9787 28.7804 23.3705 28.6302 23.6667 28.3542L29.9167 22.1042Z" fill="#78C887"/>
+        </svg>
+      </div>
+      <div class="button-next">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21 41.3125C32.2188 41.3125 41.3125 32.2188 41.3125 21C41.3125 9.78125 32.2188 0.687499 21 0.687498C9.78125 0.687497 0.687503 9.78125 0.687502 21C0.687501 32.2187 9.78125 41.3125 21 41.3125ZM29.9167 22.1042C30.2093 21.8112 30.3736 21.4141 30.3736 21C30.3736 20.5859 30.2093 20.1888 29.9167 19.8958L23.6667 13.6458C23.5236 13.4923 23.3511 13.3692 23.1595 13.2838C22.9678 13.1984 22.7609 13.1525 22.5511 13.1488C22.3413 13.1451 22.1329 13.1837 21.9383 13.2622C21.7438 13.3408 21.567 13.4578 21.4187 13.6062C21.2703 13.7545 21.1533 13.9313 21.0747 14.1258C20.9962 14.3204 20.9576 14.5288 20.9613 14.7386C20.965 14.9484 21.0109 15.1553 21.0963 15.347C21.1817 15.5386 21.3048 15.7111 21.4583 15.8542L25.0417 19.4375L13.1875 19.4375C12.7731 19.4375 12.3757 19.6021 12.0826 19.8951C11.7896 20.1882 11.625 20.5856 11.625 21C11.625 21.4144 11.7896 21.8118 12.0826 22.1049C12.3757 22.3979 12.7731 22.5625 13.1875 22.5625L25.0417 22.5625L21.4583 26.1458C21.1823 26.442 21.0321 26.8338 21.0392 27.2386C21.0464 27.6434 21.2103 28.0296 21.4966 28.3159C21.7829 28.6022 22.1691 28.7661 22.5739 28.7733C22.9787 28.7804 23.3705 28.6302 23.6667 28.3542L29.9167 22.1042Z" fill="#78C887"/>
+        </svg>
+      </div> 
+    </div>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./news.9b0fc75d.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">#НЕмакулатура</div>
+          <div class="block-with-slider__slide-text">
+            <p>Мы дружим с городскими сообществами и создаём совместные проекты.</p>
+            <p>С «Музеем Ижевска» запустили небольшой, но очень культурный проект #НЕмакулатура: с горожанами собираем в специальный контейнер ценные издания книг и журналов.</p>
+            <p>Они должны были отправиться на переработку, но вместе мы отправляем их в музейные фонды</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./block-with-slider.0305bc12.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">Обладатели<br>
+          «Зелёной премии» 2021 года</div>
+          <div class="block-with-slider__slide-text">
+            <p>Получили «Зелёную премию-2021» за 5-е место в России среди 200 регоператоров в рейтинге ППК «Российский экологический оператор».</p>
+            <p>А также занимаем третью строчку в рейтинге «Российского экологического оператора» по информированности жителей о правилах раздельного сбора отходов.</p>
+          </div>
+        </div>
+      </div>
+       <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./block-with-slider.0305bc12.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">Обладатели<br>
+          «Зелёной премии» 2021 года</div>
+          <div class="block-with-slider__slide-text">
+            <p>Получили «Зелёную премию-2021» за 5-е место в России среди 200 регоператоров в рейтинге ППК «Российский экологический оператор».</p>
+            <p>А также занимаем третью строчку в рейтинге «Российского экологического оператора» по информированности жителей о правилах раздельного сбора отходов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img-wrapper">
+          <img class="swiper-lazy" src="../../assets/img/bg-craft.png" data-src="./news.9b0fc75d.png"/>
+          <div class="swiper-lazy-preloader"></div> 
+        </div>
+        <div class="block-with-slider__slide-main">
+          <div class="block-with-slider__slide-name">Обладатели<br>
+            «Зелёной премии» 2021 года</div>
+          <div class="block-with-slider__slide-text">
+            <p>Получили «Зелёную премию-2021» за 5-е место в России среди 200 регоператоров в рейтинге ППК «Российский экологический оператор».</p>
+            <p>А также занимаем третью строчку в рейтинге «Российского экологического оператора» по информированности жителей о правилах раздельного сбора отходов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="what-send bg-brown eco-lavka">
+  <div class="bg-brown__bg"></div>
+  <div class="bg-brown__bg bg-brown__bg-down"></div>
+  <div class="container">
+    <div class="eco-lavka__title">
+      Эколавка
+      <small>Создаём разумные вещи для сокращения отходов в нашей<br>
+жизни. В Эколавке можно купить сувениры из вторресурсов</small>
+    </div>
+    <div class="eco-lavka__list article__list">
+      <div data-aos="fade-up" data-aos-delay="0">
+        {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+      <div data-aos="fade-up" data-aos-delay="400">
+        {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+      <div data-aos="fade-up" data-aos-delay="600">
+        {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+      <div data-aos="fade-up" data-aos-delay="800">
+        {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+      <div data-aos="fade-up" data-aos-delay="1000">
+       {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+      <div data-aos="fade-up" data-aos-delay="1200">
+       {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+      <div data-aos="fade-up" data-aos-delay="1400">
+        {{> "product/product" img="../../assets/img/news/news.png" name="Сумка" description="Сшита из рекламного баннера" count="980"}}
+      </div>
+    </div>
+    <div class="eco-lavka__where">
+      <b>Где купить?</b>
+      <p>«Эколавка» работает в пункте приёма<br>
+вторресурсов «Экодом» на&nbsp;Холмогорова,&nbsp;11.</p>
+      <p>Ежедневно с 10:00 до 20:00<br>
+Обед с 14:00 до 15:00</p>
+      <a class="button smooth-scroll" data-link="#block-map">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.61667 18.6258L9.675 18.6592L9.69833 18.6725C9.79086 18.7225 9.89439 18.7487 9.99958 18.7487C10.1048 18.7487 10.2083 18.7225 10.3008 18.6725L10.3242 18.66L10.3833 18.6258C10.7093 18.4326 11.0273 18.2263 11.3367 18.0075C12.1376 17.4421 12.8859 16.8056 13.5725 16.1058C15.1925 14.4475 16.875 11.9558 16.875 8.75C16.875 6.92664 16.1507 5.17795 14.8614 3.88864C13.572 2.59933 11.8234 1.875 10 1.875C8.17664 1.875 6.42795 2.59933 5.13864 3.88864C3.84933 5.17795 3.125 6.92664 3.125 8.75C3.125 11.955 4.80833 14.4475 6.4275 16.1058C7.11387 16.8056 7.86189 17.442 8.6625 18.0075C8.97214 18.2263 9.29045 18.4326 9.61667 18.6258ZM10 11.25C10.663 11.25 11.2989 10.9866 11.7678 10.5178C12.2366 10.0489 12.5 9.41304 12.5 8.75C12.5 8.08696 12.2366 7.45107 11.7678 6.98223C11.2989 6.51339 10.663 6.25 10 6.25C9.33696 6.25 8.70107 6.51339 8.23223 6.98223C7.76339 7.45107 7.5 8.08696 7.5 8.75C7.5 9.41304 7.76339 10.0489 8.23223 10.5178C8.70107 10.9866 9.33696 11.25 10 11.25Z" fill="white"/>
+        </svg>Открыть карту
+      </a>
+    </div>
+  </div>
+</div>
+<div class="feedback container">
+  <div class="feedback__title">
+    Читайте о нас<br><span class="brown">в Яндексе</span>
+    <small>И делитесь своими впечатлениями</small>
+    <div class="feedback-vidjet">
+      <div style="height:800px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/64686741334?comments"></iframe><a href="https://yandex.ru/maps/org/ekodom/64686741334/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Экодом на карте Ижевска — Яндекс Карты</a></div>
+    </div>
+  </div>
+</div>
+<div class="faq container">
+  <div class="faq__title">Часто задаваемые<br> вопросы</div>
+  <ul class="faq__list" select-list>
+    <li>
+      <ul>
+        <li class="faq__item" select-item>
+      <button select-button class="faq__button">Нужно ли мыть бутылки / банки?{{> "icons/button-array"}}</button>
+        <div class="faq__content">
+          Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+        </div>
+    </li>
+    <li class="faq__item" select-item>
+      <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+        <div class="faq__content">
+          Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+        </div>
+    </li>
+    <li class="faq__item" select-item>
+      <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у стеклянных бутылок?{{> "icons/button-array"}}</button>
+        <div class="faq__content">
+          Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+        </div>
+    </li>
+    <li class="faq__item" select-item>
+      <button select-button class="faq__button">Нужно ли очищать бумагу от скрепок и файлов,<br>
+а учебники и тетради от обложек?{{> "icons/button-array"}}</button>
+        <div class="faq__content">
+          Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+        </div>
+    </li>
+    <li class="faq__item" select-item>
+      <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+        <div class="faq__content">
+          Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+        </div>
+    </li>
+      </ul>
+    </li>
+    <li>
+      <ul> 
+        <li class="faq__item" select-item>
+          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+            <div class="faq__content">
+              Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+            </div>
+        </li>
+        <li class="faq__item" select-item>
+          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у стеклянных бутылок?{{> "icons/button-array"}}</button>
+            <div class="faq__content">
+              Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+            </div>
+        </li>
+        <li class="faq__item" select-item>
+          <button select-button class="faq__button">Нужно ли очищать бумагу от скрепок и файлов,<br>
+    а учебники и тетради от обложек?{{> "icons/button-array"}}</button>
+            <div class="faq__content">
+              Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+            </div>
+        </li>
+        <li class="faq__item" select-item>
+          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+            <div class="faq__content">
+              Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+            </div>
+        </li>
+        <li class="faq__item" select-item>
+          <button select-button class="faq__button">Нужно ли очищать бумагу от скрепок и файлов,<br>
+    а учебники и тетради от обложек?{{> "icons/button-array"}}</button>
+            <div class="faq__content">
+              Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+            </div>
+        </li>
+        <li class="faq__item" select-item>
+          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+            <div class="faq__content">
+              Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
+            </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="have-quest container">
+  <div class="have-quest__info">
+    <div class="have-quest__title">Остались<br> вопросы?</div>
+    <div class="have-quest__text">Задайте их в сообщениях нашей группы<br> в ВК, и мы ответим вам в течение дня</div>
+    <a class="button vk" href="https://vk.me/regoperatorudmurtia" target="_blank">{{> "icons/vk" }}<span>задать вопрос</span></a>
+  </div>
+  <div class="have-quest__img">
+    <img class="phone-img" src="../../assets/img/main/have-quest.png" alt="">
+    <img class="list-right rellax-not-mob" data-rellax-speed="1" src="../../assets/img/main/list-right.png" alt="">
+    <img class="list-left rellax-not-mob" data-rellax-speed="-1" src="../../assets/img/main/list-left.png" alt="">
+    <img class="xs" src="../../assets/img/main/quest-xs.png" alt="">
+  </div>
+</div>

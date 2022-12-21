@@ -1,0 +1,51 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.eco-lavka__item {
+  width: 270px;
+  background-color: white;
+  border-radius: 10px;
+  display: block;
+  @include mobile {
+    width: 100%;
+  }
+  & .img-wrapper {
+    padding-bottom: calc(200 / 270 * 100%);
+    border-radius: 10px;
+  }
+  &-info {
+    padding: 20px;
+    letter-spacing: -0.02em;
+    position: relative;
+  }
+  &-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #021c13;
+  }
+  &-description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    opacity: 0.5;
+  }
+  &-count {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #fefefe;
+    display: block;
+    background-color: $brown;
+    padding: 9px 16px 7px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    transform: translateY(-50%);
+  }
+}
