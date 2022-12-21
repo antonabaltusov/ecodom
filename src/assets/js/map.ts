@@ -96,7 +96,7 @@ if (mapBlock) {
           </div> 
         </div>`
         );
-        const defaultImg = "./claster-green.svg"'
+        const defaultImg = "./claster-green.74d65df0.svg"'
         myGeoObjects[index] = new ymaps.Placemark(
           item.coorditate,
           {
@@ -120,7 +120,7 @@ if (mapBlock) {
         myGeoObjects[index].events.add("balloonopen", (e) => {
 
           myGeoObjects[index].options.set({
-            iconImageHref: "./claster-grey.svg",
+            iconImageHref: "./claster-grey.95c4eeec.svg",
           });
         });
         myGeoObjects[index].events.add("balloonclose", (e) => {
@@ -137,8 +137,8 @@ if (mapBlock) {
         clusterIcons: [
           {
             href: item.colorClaster
-              ? "./claster-green.svg"
-              : "./claster-brown.svg",
+              ? "./claster-green.74d65df0.svg"
+              : "./claster-brown.1d7997b4.svg",
             size: [50, 50],
             offset: [-25, -25],
           },
