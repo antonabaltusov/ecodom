@@ -36,8 +36,14 @@ if (mapBlock) {
   const centerCoordinate = mobileBoolean ?  [56.66612842030013,53.45914824469841]:[56.75039784124635, 53.05381378684546];
   const maxWidthBalloon = mobileBoolean ? 300: 500;
   const buttons = mapBlock.querySelectorAll(".map-block__buttons button");
+  const buttonsToMap = document.querySelectorAll(".smooth-scroll#show-map");
 
   buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      mapBlock.id = btn.id;
+    });
+  });
+  buttonsToMap.forEach((btn) => {
     btn.addEventListener("click", () => {
       mapBlock.id = btn.id;
     });

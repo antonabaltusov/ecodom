@@ -19,8 +19,8 @@
       position: absolute;
       width: 300px;
       height: 300px;
-      top: 32px;
-      right: 135px;
+      top: 140px;
+      right: -11px;
       & img {
         width: 100%;
         height: 100%;
@@ -189,6 +189,7 @@
       text-transform: uppercase;
       color: $greenDark;
       position: relative;
+      z-index: 10;
       @include mobile {
         font-size: 20px;
       }
@@ -413,26 +414,43 @@
       @include mobile {
         display: none;
       }
+      & img {
+        position: absolute;
+      }
     }
     & .bg-lists-1 {
       position: absolute;
       height: 441px;
       width: 282px;
-      background-image: url(../../assets/img/main/lists.png);
       transform: translateY(20%);
       left: 0;
+      bottom: 20%;
       @include tablet {
         transform: translateY(10%);
       }
+      background-image: url(../../assets/img/main/list.png);
     }
     & .bg-lists-2 {
       height: 546px;
       width: 300px;
-      background-image: url(../../assets/img/main/lists2.png);
       transform: translateY(5%);
       right: 84px;
       @include tablet {
         right: -5%;
+      }
+      & img {
+        &:nth-child(1) {
+          top: 40%;
+          left: 10px;
+        }
+        &:nth-child(2) {
+          top: -30%;
+          right: 0;
+        }
+        &:nth-child(3) {
+          top: 50%;
+          right: 0;
+        }
       }
     }
   }
@@ -589,7 +607,7 @@
     }
   }
   &-welcome {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
 .what-send {
@@ -831,7 +849,7 @@
         background-image: url(../../assets/img/main/battery.png);
         width: 168.83px;
         height: 182.62px;
-        top: 0;
+        top: -30%;
         right: calc(96 / 560 * 100%);
         transform: translateY(-40%);
         @include note {
@@ -847,8 +865,8 @@
         background-image: url(../../assets/img/main/lampa.png);
         width: 199px;
         height: 156px;
-        top: 50px;
-        right: 0;
+        top: 70px;
+        right: -60px;
         transform: translateX(25%);
         @include tablet {
           width: 150px;
@@ -1291,6 +1309,7 @@
   }
 }
 .eco-lavka {
+  margin-top: 50px;
   &__list {
     margin-top: 60px;
     @include mobile {
@@ -1392,7 +1411,7 @@
     }
   }
   &-vidjet {
-    margin-top: 54px;
+    margin: 54px auto 0;
     width: 100%;
     max-width: 410px;
     @include mobile {

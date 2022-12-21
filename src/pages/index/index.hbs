@@ -25,7 +25,7 @@
     <h1 class="main-header__title">Выкупаем раздельно<br />
       собранные отходы
       <small>для дальнейшей переработки</small>
-      <div class="main-header__logo rellax" data-rellax-speed="1">
+      <div class="main-header__logo rellax" data-rellax-speed="4">
         <img src="../../assets/img/main-header-logo.svg" alt="логотип" />
       </div>
     </h1>
@@ -50,7 +50,7 @@
   </div>
 </div>
 <div class="main-video container">
-  <div class="main-video__title">
+  <div class="main-video__title" data-aos="fade" data-aos-delay="0">
     что такое<br>
     <div class="main-video__title-big">
       <svg width="350" height="75" viewBox="0 0 350 75">
@@ -75,28 +75,32 @@
       Помогаем жителям Удмуртии заботиться об окружающей<br>
 среде, внедряя раздельный сбор отходов в республике 
     </div>
-    <a href="../welcome-to-ecodom/welcome-to-ecodom.hbs" class="button">Записаться на экскурсию</a>
+    <a href="https://dikidi.net/688565" target="_blank" class="button">Записаться на экскурсию</a>
   </div>
 </div>
 <div class="main-numbers">
   <div class="main-numbers__list container">
-    <div class="main-numbers__item green">
+    <div class="main-numbers__item green" data-aos="zoom-in-right" data-aos-delay="50">
       <div class="name">Принимаем более</div>
       <div class="number">30</div>
       <div class="measure">видов отходов</div>
     </div>
-    <div class="main-numbers__item brown">
+    <div class="main-numbers__item brown" data-aos="zoom-in-left" data-aos-delay="50">
       <div class="name">Выкупаем по цене до</div>
       <div class="number">20</div>
       <div class="measure">руб / кг</div>
     </div>
   </div>
-  <div class="main-numbers__pay">
+  <div class="main-numbers__pay" data-aos="zoom-in" data-aos-delay="50">
     <div class="name">Оплачиваем</div>наличными<br>
       <b>или на карту</b>
   </div>
-  <div class="bg-lists bg-lists-1"></div>
-  <div class="bg-lists bg-lists-2"></div>
+  <div data-rellax-speed="6" class="bg-lists bg-lists-1 rellax-not-mob"></div>
+  <div class="bg-lists bg-lists-2">
+    <img data-rellax-speed="4" src="../../assets/img/main/list-right.png" class="rellax-not-mob" alt="">
+    <img data-rellax-speed="2" src="../../assets/img/main/list-left.png" class="rellax-not-mob" alt="">
+    <img data-rellax-speed="-2" src="../../assets/img/main/list-small.png" class="rellax-not-mob" alt="">
+  </div>
 </div>
 <div class="what-send bg-brown">
   <div class="bg-brown__bg"></div>
@@ -165,8 +169,8 @@
       <a href="https://vk.me/regoperatorudmurtia" class="button">{{> "icons/camera"}}Отправить фото</a>
     </div>
     <div class="quest__item">
-      <div class="bg bg-batarea"></div>
-      <div class="bg bg-lampa"></div>
+      <div data-rellax-speed="-1" class="bg bg-batarea rellax-not-mob"></div>
+      <div data-rellax-speed="-4" class="bg bg-lampa rellax-not-mob"></div>
       <div class="quest__name">
         <small class="brown">Куда сдать</small>
         <b>батарейки,
@@ -179,7 +183,7 @@
         для вас мы составили карту с бесплатными пунктами<br>
         приёма таких отходов
       </div>
-      <a class="button smooth-scroll" data-link="#block-map">
+      <a class="button smooth-scroll" data-link="#block-map" id="show-map">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M9.61667 18.6258L9.675 18.6592L9.69833 18.6725C9.79086 18.7225 9.89439 18.7487 9.99958 18.7487C10.1048 18.7487 10.2083 18.7225 10.3008 18.6725L10.3242 18.66L10.3833 18.6258C10.7093 18.4326 11.0273 18.2263 11.3367 18.0075C12.1376 17.4421 12.8859 16.8056 13.5725 16.1058C15.1925 14.4475 16.875 11.9558 16.875 8.75C16.875 6.92664 16.1507 5.17795 14.8614 3.88864C13.572 2.59933 11.8234 1.875 10 1.875C8.17664 1.875 6.42795 2.59933 5.13864 3.88864C3.84933 5.17795 3.125 6.92664 3.125 8.75C3.125 11.955 4.80833 14.4475 6.4275 16.1058C7.11387 16.8056 7.86189 17.442 8.6625 18.0075C8.97214 18.2263 9.29045 18.4326 9.61667 18.6258ZM10 11.25C10.663 11.25 11.2989 10.9866 11.7678 10.5178C12.2366 10.0489 12.5 9.41304 12.5 8.75C12.5 8.08696 12.2366 7.45107 11.7678 6.98223C11.2989 6.51339 10.663 6.25 10 6.25C9.33696 6.25 8.70107 6.51339 8.23223 6.98223C7.76339 7.45107 7.5 8.08696 7.5 8.75C7.5 9.41304 7.76339 10.0489 8.23223 10.5178C8.70107 10.9866 9.33696 11.25 10 11.25Z" fill="white"/>
         </svg>Открыть карту
@@ -429,7 +433,7 @@
 </div>
 <div class="main-subscribe container">
   <div class="main-subscribe__img">
-    <img src="../../assets/img/main/subscribe.png" alt="">
+    <img class="rellax-not-mob" data-rellax-speed="-1" src="../../assets/img/main/subscribe.png" alt="">
     <img class="xs" src="../../assets/img/main/subscribe-xs.png" alt="">
   </div>
   <div class="main-subscribe__main">
@@ -456,7 +460,7 @@
     <ul class="some-more__list">
       <li class="some-more__item up" 
         data-aos="fade-up"
-        data-aos-delay="200">
+        data-aos-delay="0">
         <div class="img-wrapper">
           <img src="../../assets/img/main/some-more/1.png" alt="">
         </div>
@@ -465,7 +469,7 @@
       </li>
       <li class="some-more__item"
         data-aos="fade-up"
-        data-aos-delay="600">
+        data-aos-delay="0">
         <div class="img-wrapper">
           <img src="../../assets/img/main/some-more/2.png" alt="">
         </div>
@@ -474,7 +478,7 @@
       </li>
       <li class="some-more__item up"
         data-aos="fade-up"
-        data-aos-delay="400">
+        data-aos-delay="200">
         <div class="img-wrapper">
           <img src="../../assets/img/main/some-more/3.png" alt="">
         </div>
@@ -605,7 +609,7 @@
 вторресурсов «Экодом» на&nbsp;Холмогорова,&nbsp;11.</p>
       <p>Ежедневно с 10:00 до 20:00<br>
 Обед с 14:00 до 15:00</p>
-      <a class="button smooth-scroll" data-link="#block-map">
+      <a class="button smooth-scroll" data-link="#block-map" id="show-map">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M9.61667 18.6258L9.675 18.6592L9.69833 18.6725C9.79086 18.7225 9.89439 18.7487 9.99958 18.7487C10.1048 18.7487 10.2083 18.7225 10.3008 18.6725L10.3242 18.66L10.3833 18.6258C10.7093 18.4326 11.0273 18.2263 11.3367 18.0075C12.1376 17.4421 12.8859 16.8056 13.5725 16.1058C15.1925 14.4475 16.875 11.9558 16.875 8.75C16.875 6.92664 16.1507 5.17795 14.8614 3.88864C13.572 2.59933 11.8234 1.875 10 1.875C8.17664 1.875 6.42795 2.59933 5.13864 3.88864C3.84933 5.17795 3.125 6.92664 3.125 8.75C3.125 11.955 4.80833 14.4475 6.4275 16.1058C7.11387 16.8056 7.86189 17.442 8.6625 18.0075C8.97214 18.2263 9.29045 18.4326 9.61667 18.6258ZM10 11.25C10.663 11.25 11.2989 10.9866 11.7678 10.5178C12.2366 10.0489 12.5 9.41304 12.5 8.75C12.5 8.08696 12.2366 7.45107 11.7678 6.98223C11.2989 6.51339 10.663 6.25 10 6.25C9.33696 6.25 8.70107 6.51339 8.23223 6.98223C7.76339 7.45107 7.5 8.08696 7.5 8.75C7.5 9.41304 7.76339 10.0489 8.23223 10.5178C8.70107 10.9866 9.33696 11.25 10 11.25Z" fill="white"/>
         </svg>Открыть карту
@@ -712,8 +716,8 @@
   </div>
   <div class="have-quest__img">
     <img class="phone-img" src="../../assets/img/main/have-quest.png" alt="">
-    <img class="list-right rellax-not-mob" data-rellax-speed="1" src="../../assets/img/main/list-right.png" alt="">
-    <img class="list-left rellax-not-mob" data-rellax-speed="-1" src="../../assets/img/main/list-left.png" alt="">
+    <img class="list-right rellax-not-mob" data-rellax-speed="4" src="../../assets/img/main/list-right.png" alt="">
+    <img class="list-left rellax-not-mob" data-rellax-speed="-3" src="../../assets/img/main/list-left.png" alt="">
     <img class="xs" src="../../assets/img/main/quest-xs.png" alt="">
   </div>
 </div>
