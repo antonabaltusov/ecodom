@@ -294,8 +294,15 @@ body.modal-active {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
+
   &-wrapper {
     width: 80%;
+    & .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     @include mobile {
       width: 98%;
     }
@@ -412,5 +419,25 @@ body.modal-active {
     }
     @include tablet {
     }
+  }
+}
+.spinner {
+  height: 50px;
+  width: 50px;
+  border-left: 5px solid $brown;
+  border-bottom: 5px solid $brown;
+  border-right: 5px solid $brown;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

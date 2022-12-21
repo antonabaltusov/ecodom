@@ -9,6 +9,7 @@ const buttons = document.querySelectorAll(".button-video").forEach((btn) => {
     const videoId = e.target.closest("[video-id]").getAttribute("video-id");
     const frame = `
     <div class="adaptive_youtube-wrapper">
+    <div class="spinner"></div>
     <div class="adaptive_youtube">
     <iframe width="560" height="315" autoplay 
     src="https://www.youtube.com/embed/${videoId}" 

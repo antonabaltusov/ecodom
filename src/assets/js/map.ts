@@ -4,6 +4,7 @@ type Iadres = {
   coorditate: [string, string];
   dop: string;
   types: HTMLElement | null;
+  green: boolean;
 };
 type Iadresses = [
   {
@@ -26,15 +27,18 @@ document.querySelectorAll(".map-block__item").forEach((city, id) => {
       adres: a?.textContent!,
       dop: li.querySelector(".map-block__dop")?.textContent!,
       types: li.querySelector(".map-block__types"),
+      green: !li.querySelector(".map-block__type.brown"),
     });
   });
   adresses[id] = cityItem;
 });
 
 if (mapBlock) {
-  const mobileBoolean =  document.documentElement.clientWidth < 400;
-  const centerCoordinate = mobileBoolean ?  [56.66612842030013,53.45914824469841]:[56.75039784124635, 53.05381378684546];
-  const maxWidthBalloon = mobileBoolean ? 300: 500;
+  const mobileBoolean = document.documentElement.clientWidth < 400;
+  const centerCoordinate = mobileBoolean
+    ? [56.66612842030013, 53.45914824469841]
+    : [56.75039784124635, 53.05381378684546];
+  const maxWidthBalloon = mobileBoolean ? 300 : 500;
   const buttons = mapBlock.querySelectorAll(".map-block__buttons button");
   const buttonsToMap = document.querySelectorAll(".smooth-scroll#show-map");
 
@@ -96,7 +100,9 @@ if (mapBlock) {
           </div> 
         </div>`
         );
-        const defaultImg = "./claster-green.74d65df0.svg"'
+        const defaultImg = item.green
+          ? "./claster-green.74d65df0.svg"
+          : "./claster-brown.1d7997b4.svg";
         myGeoObjects[index] = new ymaps.Placemark(
           item.coorditate,
           {
@@ -118,13 +124,11 @@ if (mapBlock) {
           }
         );
         myGeoObjects[index].events.add("balloonopen", (e) => {
-
           myGeoObjects[index].options.set({
             iconImageHref: "./claster-grey.95c4eeec.svg",
           });
         });
         myGeoObjects[index].events.add("balloonclose", (e) => {
-
           myGeoObjects[index].options.set({
             iconImageHref: defaultImg,
           });
