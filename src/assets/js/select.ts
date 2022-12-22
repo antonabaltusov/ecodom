@@ -38,7 +38,10 @@ export default function select() {
                 item.classList.toggle("active");
               }
             } else {
-              if (activeItem?.classList.contains("what-send__item")) {
+              if (
+                activeItem?.classList.contains("what-send__item") &&
+                window.innerWidth > 375
+              ) {
                 activeItem?.classList.remove("active");
                 item.classList.add("active");
               } else {
