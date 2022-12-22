@@ -85,11 +85,11 @@
     <div class="name">Оплачиваем</div>наличными<br>
       <b>или на карту</b>
   </div>
-  <div data-rellax-speed="6" class="bg-lists bg-lists-1 rellax-not-mob"></div>
+  <div data-rellax-speed="6" class="bg-lists bg-lists-1 rellax"></div>
   <div class="bg-lists bg-lists-2">
-    <img data-rellax-speed="4" src="../../assets/img/main/list-right.png" class="rellax-not-mob" alt="">
-    <img data-rellax-speed="2" src="../../assets/img/main/list-left.png" class="rellax-not-mob" alt="">
-    <img data-rellax-speed="-2" src="../../assets/img/main/list-small.png" class="rellax-not-mob" alt="">
+    <img data-rellax-speed="4" src="../../assets/img/main/list-right.png" class="rellax" alt="">
+    <img data-rellax-speed="2" src="../../assets/img/main/list-left.png" class="rellax" alt="">
+    <img data-rellax-speed="-2" src="../../assets/img/main/list-small.png" class="rellax" alt="">
   </div>
 </div>
 <div class="what-send bg-brown">
@@ -99,43 +99,43 @@
     <div class="what-send__title"><div class="what-send__title-mob">Что<br> можно сдать<br> в Экодом?</div><b>Что можно<br> сдать в&nbsp;Экодом?</b><small>Вы удивитесь, как много всего</small></div>
     <ul select-list class="what-send__list">
       <li select-item class="what-send__item active">
-        <button select-button class="what-send__button">Пластик{{> "icons/button-array"}}</button>
+        <button select-button class="what-send__button"><span>Пластик</span>{{> "icons/button-array"}}</button>
         <div class="what-send__content">
           {{> "content__list/content__list"}}
         </div>
       </li>
       <li select-item class="what-send__item">
-        <button select-button class="what-send__button">Пакеты и пленка{{> "icons/button-array"}}</button>
+        <button select-button class="what-send__button"><span>Пакеты и пленка</span>{{> "icons/button-array"}}</button>
         <div class="what-send__content">
           {{> "content__list/content__list"}}
         </div>
       </li>
       <li select-item class="what-send__item">
-        <button select-button class="what-send__button">Стекло и металл{{> "icons/button-array"}}</button>
+        <button select-button class="what-send__button"><span>Стекло и металл</span>{{> "icons/button-array"}}</button>
         <div class="what-send__content">
           {{> "content__list/content__list"}}
         </div>
       </li>
       <li select-item class="what-send__item">
-        <button select-button class="what-send__button">Макулатура и тетрапак{{> "icons/button-array"}}</button>
+        <button select-button class="what-send__button"><span>Макулатура и тетрапак</span>{{> "icons/button-array"}}</button>
         <div class="what-send__content">
           {{> "content__list/content__list"}}
         </div>
       </li>
       <li select-item class="what-send__item">
-        <button select-button class="what-send__button">Одежда и текстиль{{> "icons/button-array"}}</button>
+        <button select-button class="what-send__button"><span>Одежда и текстиль</span>{{> "icons/button-array"}}</button>
         <div class="what-send__content">
           {{> "content__list/content__list"}}
         </div>
       </li>
       <li select-item class="what-send__item">
-        <button select-button class="what-send__button">Бытовая техника<br>и электроника{{> "icons/button-array"}}</button>
+        <button select-button class="what-send__button"><span>Бытовая техника<br>и электроника</span>{{> "icons/button-array"}}</button>
         <div class="what-send__content">
           {{> "content__list/content__list"}}
         </div>
       </li>
       <li select-item class="what-send__item">
-        <button select-button class="what-send__button">Мебель, сантехника,<br> шины, ветки и пр.{{> "icons/button-array"}}</button>
+        <button select-button class="what-send__button"><span>Мебель, сантехника,<br> шины, ветки и пр.</span>{{> "icons/button-array"}}</button>
         <div class="what-send__content">
           {{> "content__list/content__list"}}
         </div>
@@ -159,8 +159,8 @@
       <a href="https://vk.me/regoperatorudmurtia" class="button">{{> "icons/camera"}}Отправить фото</a>
     </div>
     <div class="quest__item">
-      <div data-rellax-speed="-1" class="bg bg-batarea rellax-not-mob"></div>
-      <div data-rellax-speed="-4" class="bg bg-lampa rellax-not-mob"></div>
+      <div data-rellax-speed="-1" class="bg bg-batarea rellax"></div>
+      <div data-rellax-speed="-4" class="bg bg-lampa rellax"></div>
       <div class="quest__name">
         <small class="brown">Куда сдать</small>
         <b>батарейки,
@@ -320,6 +320,7 @@
         </div>
         <div class="people-wait__who">
           <div class="people-wait__who-img">
+            <img class="xs" src="../../assets/img/main/people-wait-xs.png" alt="Иван Маринин">
             <img src="../../assets/img/main/people-wait.png" alt="Иван Маринин">
           </div>
           <div>
@@ -423,7 +424,7 @@
 </div>
 <div class="main-subscribe container">
   <div class="main-subscribe__img">
-    <img class="rellax-not-mob" data-rellax-speed="-1" src="../../assets/img/main/subscribe.png" alt="">
+    <img class="rellax" data-rellax-speed="-1" src="../../assets/img/main/subscribe.png" alt="">
     <img class="xs" src="../../assets/img/main/subscribe-xs.png" alt="">
   </div>
   <div class="main-subscribe__main">
@@ -622,32 +623,32 @@
     <li>
       <ul>
         <li class="faq__item" select-item>
-      <button select-button class="faq__button">Нужно ли мыть бутылки / банки?{{> "icons/button-array"}}</button>
+      <button select-button class="faq__button"><span>Нужно ли мыть бутылки / банки?</span>{{> "icons/button-array"}}</button>
         <div class="faq__content">
           Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
         </div>
     </li>
     <li class="faq__item" select-item>
-      <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+      <button select-button class="faq__button"><span>Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?</span>{{> "icons/button-array"}}</button>
         <div class="faq__content">
           Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
         </div>
     </li>
     <li class="faq__item" select-item>
-      <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у стеклянных бутылок?{{> "icons/button-array"}}</button>
+      <button select-button class="faq__button"><span>Нужно ли снимать этикетки и крышки<br>у стеклянных бутылок?</span>{{> "icons/button-array"}}</button>
         <div class="faq__content">
           Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
         </div>
     </li>
     <li class="faq__item" select-item>
-      <button select-button class="faq__button">Нужно ли очищать бумагу от скрепок и файлов,<br>
-а учебники и тетради от обложек?{{> "icons/button-array"}}</button>
+      <button select-button class="faq__button"><span>Нужно ли очищать бумагу от скрепок и файлов,<br>
+а учебники и тетради от обложек?</span>{{> "icons/button-array"}}</button>
         <div class="faq__content">
           Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
         </div>
     </li>
     <li class="faq__item" select-item>
-      <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+      <button select-button class="faq__button"><span>Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?</span>{{> "icons/button-array"}}</button>
         <div class="faq__content">
           Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
         </div>
@@ -657,39 +658,39 @@
     <li>
       <ul> 
         <li class="faq__item" select-item>
-          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+          <button select-button class="faq__button"><span>Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?</span>{{> "icons/button-array"}}</button>
             <div class="faq__content">
               Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
             </div>
         </li>
         <li class="faq__item" select-item>
-          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у стеклянных бутылок?{{> "icons/button-array"}}</button>
+          <button select-button class="faq__button"><span>Нужно ли снимать этикетки и крышки<br>у стеклянных бутылок?</span>{{> "icons/button-array"}}</button>
             <div class="faq__content">
               Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
             </div>
         </li>
         <li class="faq__item" select-item>
-          <button select-button class="faq__button">Нужно ли очищать бумагу от скрепок и файлов,<br>
-    а учебники и тетради от обложек?{{> "icons/button-array"}}</button>
+          <button select-button class="faq__button"><span>Нужно ли очищать бумагу от скрепок и файлов,<br>
+    а учебники и тетради от обложек?</span>{{> "icons/button-array"}}</button>
             <div class="faq__content">
               Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
             </div>
         </li>
         <li class="faq__item" select-item>
-          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+          <button select-button class="faq__button"><span>Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?</span>{{> "icons/button-array"}}</button>
             <div class="faq__content">
               Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
             </div>
         </li>
         <li class="faq__item" select-item>
-          <button select-button class="faq__button">Нужно ли очищать бумагу от скрепок и файлов,<br>
-    а учебники и тетради от обложек?{{> "icons/button-array"}}</button>
+          <button select-button class="faq__button"><span>Нужно ли очищать бумагу от скрепок и файлов,<br>
+    а учебники и тетради от обложек?</span>{{> "icons/button-array"}}</button>
             <div class="faq__content">
               Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
             </div>
         </li>
         <li class="faq__item" select-item>
-          <button select-button class="faq__button">Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?{{> "icons/button-array"}}</button>
+          <button select-button class="faq__button"><span>Нужно ли снимать этикетки и крышки<br>у пластиковых бутылок?</span>{{> "icons/button-array"}}</button>
             <div class="faq__content">
               Мыть — нет, но ополоснуть, чтобы было комфортно хранить вам и нам, надо. Загрязнённое вторсырье Экодома не выкупают.
             </div>
@@ -706,8 +707,8 @@
   </div>
   <div class="have-quest__img">
     <img class="phone-img" src="../../assets/img/main/have-quest.png" alt="">
-    <img class="list-right rellax-not-mob" data-rellax-speed="4" src="../../assets/img/main/list-right.png" alt="">
-    <img class="list-left rellax-not-mob" data-rellax-speed="-3" src="../../assets/img/main/list-left.png" alt="">
+    <img class="list-right rellax" data-rellax-speed="4" src="../../assets/img/main/list-right.png" alt="">
+    <img class="list-left rellax" data-rellax-speed="-3" src="../../assets/img/main/list-left.png" alt="">
     <img class="xs" src="../../assets/img/main/quest-xs.png" alt="">
   </div>
 </div>

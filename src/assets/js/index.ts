@@ -47,11 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
 window.onload = () => {
   select();
   AOS.refresh();
-  new Rellax(".rellax", {
-    center: true,
-  });
   if (document.documentElement.clientWidth > 500) {
-    new Rellax(".rellax-not-mob", {
+    new Rellax(".rellax", {
       center: true,
     });
   }

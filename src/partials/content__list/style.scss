@@ -129,7 +129,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 170px;
+      width: 140px;
       height: 140px;
     }
   }
@@ -218,6 +218,10 @@
     @include note {
       margin-top: 20px;
       font-size: 12px;
+    }
+    @include mobile {
+      padding: 10px 10px 10px 13px;
+      width: 100%;
     }
   }
 }
