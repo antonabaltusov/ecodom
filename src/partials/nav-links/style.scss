@@ -18,13 +18,13 @@
       color: $green;
       text-decoration-line: underline;
       text-decoration-thickness: 2px;
-      text-underline-offset: 6px;
+      text-underline-offset: 8px;
     }
     &.active {
       pointer-events: none;
       text-decoration-line: underline;
       text-decoration-thickness: 2px;
-      text-underline-offset: 6px;
+      text-underline-offset: 8px;
     }
   }
 }
