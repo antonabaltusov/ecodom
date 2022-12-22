@@ -16,7 +16,10 @@ export default function select() {
         item.classList.contains("active")
       );
 
-      if (activeItem?.classList.contains("what-send__item")) {
+      if (
+        activeItem?.classList.contains("what-send__item") &&
+        window.innerWidth > 375
+      ) {
         refreshHeightWhatSend(activeItem as HTMLElement);
       }
       itemArray.forEach((item) => {
