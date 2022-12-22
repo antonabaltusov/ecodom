@@ -280,6 +280,9 @@ body.modal-active {
     letter-spacing: 0.025em;
     @include mobile {
       font-size: 44px;
+      & span {
+        display: none;
+      }
     }
   }
   &__description {
