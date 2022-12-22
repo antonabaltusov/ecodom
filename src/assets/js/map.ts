@@ -114,7 +114,6 @@ if (mapBlock) {
             iconImageSize: [30, 30],
             balloonShadow: true,
             balloonContentLayout: MyBalloonContentLayout,
-            balloonPanelMaxMapArea: 0,
             balloonMaxWidth: maxWidthBalloon,
             // Не скрываем иконку при открытом балуне.
             hideIconOnBalloonOpen: false,

@@ -43,17 +43,17 @@ export default function select() {
               }
               activeItem = item;
             }
-            if (
-              activeItem.classList.contains("what-send__item") &&
-              window.innerWidth <= 375
-            ) {
-              const yOffset = -10;
-              const y =
-                activeItem.getBoundingClientRect().top +
-                window.pageYOffset +
-                yOffset;
-              window.scrollTo({ top: y, behavior: "smooth" });
-            }
+            // if (
+            //   activeItem.classList.contains("what-send__item") &&
+            //   window.innerWidth <= 375
+            // ) {
+            //   const yOffset = -10;
+            //   const y =
+            //     activeItem.getBoundingClientRect().top +
+            //     window.pageYOffset +
+            //     yOffset;
+            //   window.scrollTo({ top: y, behavior: "smooth" });
+            // }
             if (activeItem?.classList.contains("what-send__item")) {
               refreshHeightWhatSend(activeItem as HTMLElement);
             }

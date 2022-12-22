@@ -12,7 +12,7 @@ const buttons = document.querySelectorAll(".button-video").forEach((btn) => {
     <div class="spinner"></div>
     <div class="adaptive_youtube">
     <iframe width="560" height="315" autoplay 
-    src="https://www.youtube.com/embed/${videoId}" 
+    src="https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0" 
     title="YouTube video player" frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; 
     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
