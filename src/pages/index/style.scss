@@ -684,6 +684,8 @@
       line-height: 130%;
       width: 100%;
       & svg {
+        transition: all;
+        transition-duration: 0.5s;
         transform: rotate(90deg);
         & path {
           fill: $greenLight;
