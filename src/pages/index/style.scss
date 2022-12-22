@@ -713,18 +713,17 @@
     }
     @include mobile {
       margin-top: -20px;
+      margin-bottom: 20px;
       display: block;
-      position: absolute;
+      position: static;
       width: 100%;
+      max-height: 0;
       left: 0;
       bottom: 0;
       border-radius: 10px;
       overflow: hidden;
-      opacity: 0;
-      transition: all;
-      transition-duration: 1s;
-      transform: translateY(-100%);
-      transition-timing-function: ease-out;
+      -webkit-transition: max-height 0.5s ease, padding 0.5s ease;
+      transition: max-height 0.5s ease, padding 0.5s ease;
     }
   }
   &__item {
@@ -749,11 +748,7 @@
         &__content {
           display: block;
           @include mobile {
-            position: relative;
-            opacity: 1;
-            transform: translateY(0);
-            transition: all;
-            transition-duration: 0.7s;
+            max-height: 3000;
           }
         }
       }
@@ -1053,6 +1048,7 @@
         height: 80px;
         border-radius: 50%;
         margin-right: 16px;
+        border: 1px solid #e3e3e3;
       }
       &::before {
         content: "";
