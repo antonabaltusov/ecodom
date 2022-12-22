@@ -27,6 +27,7 @@ button {
   bottom: 0;
   content: "";
   background-image: url(../assets/img/bg-craft.png);
+  background-size: auto;
   z-index: -1;
 }
 main {
@@ -279,7 +280,6 @@ body.modal-active {
     line-height: 110%;
     text-transform: uppercase;
     color: $greenDark;
-    letter-spacing: 0.025em;
     @include mobile {
       font-size: 44px;
       & span {

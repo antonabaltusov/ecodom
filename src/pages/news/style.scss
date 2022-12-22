@@ -5,6 +5,10 @@
   margin-top: 30px;
   grid-template-columns: 50% 50%;
   display: grid;
+  &-alt {
+    display: block;
+    max-width: 620;
+  }
   & .slider-mobile {
     display: none;
     @include tablet {

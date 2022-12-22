@@ -31,10 +31,8 @@
   &__list {
     margin-top: 50px;
     display: flex;
-    justify-content: flex-start;
     gap: 40px;
     flex-wrap: wrap;
-    justify-content: center;
     @include mobile {
       margin-top: 30px;
       gap: 30px;

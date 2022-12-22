@@ -79,10 +79,10 @@ if (mapBlock) {
           `<div class="map-block__info">
           <div>
             <div class="map-block__types">
-              ${item.types?.innerHTML}
+              ${item.types?.innerHTML ? item.types?.innerHTML : ""}
             </div>
-            <div class="map-block__adres">${item.adres}</div>
-            <div class="map-block__dop">${item.dop}</div>
+            <div class="map-block__adres">${item.adres ? item.adres : ""}</div>
+            <div class="map-block__dop">${item.dop ? item.dop : ""}</div>
           </div>
           <div>
             <div class="map-block__info-time">

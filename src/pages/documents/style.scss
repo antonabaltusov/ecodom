@@ -3,6 +3,17 @@
 
 .documents {
   margin-top: 9px;
+  @include mobile {
+    &__list {
+      &:last-child {
+        & .documents__item {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
   & h1 {
     font-weight: 800;
     font-size: 60px;
