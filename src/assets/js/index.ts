@@ -2,7 +2,6 @@ import "./viewport";
 import select from "./select";
 import mobileMenu from "./mobile-menu";
 import "./polifils";
-// import popupFunc from "./popup";
 import sliderMobile, { sliderMemory } from "./slider-mobile";
 import slider from "./slider";
 import "./video-popup";
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   aosInit();
   initScrolto();
   mobileMenu();
-  // popupFunc();
   sliderMobile();
   slider();
   sliderMemory();
