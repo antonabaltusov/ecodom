@@ -1,6 +1,5 @@
 export function refreshHeightWhatSend(el: HTMLElement) {
   const list = el.closest(".what-send__list") as HTMLElement;
-  console.log(el);
 
   list.style.minHeight = `${
     (el.querySelector(".what-send__content") as HTMLElement)?.offsetHeight

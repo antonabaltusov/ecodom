@@ -1,4 +1,3 @@
-(() => {
 function $parcel$interopDefault(a) {
   return a && a.__esModule ? a.default : a;
 }
@@ -12,34 +11,33 @@ typeof globalThis !== 'undefined'
   : typeof global !== 'undefined'
   ? global
   : {};
-const $c7f7ec300a2c5ebf$var$m = document.getElementById("viewport");
-const $c7f7ec300a2c5ebf$var$c = "content";
-const $c7f7ec300a2c5ebf$var$u = "user-scalable=0";
-const $c7f7ec300a2c5ebf$var$v = "width=";
-$c7f7ec300a2c5ebf$var$resize();
-window.addEventListener("resize", $c7f7ec300a2c5ebf$var$resize);
-function $c7f7ec300a2c5ebf$var$resize() {
+const $9e8fbf34c13eba1b$var$m = document.getElementById("viewport");
+const $9e8fbf34c13eba1b$var$c = "content";
+const $9e8fbf34c13eba1b$var$u = "user-scalable=0";
+const $9e8fbf34c13eba1b$var$v = "width=";
+$9e8fbf34c13eba1b$var$resize();
+window.addEventListener("resize", $9e8fbf34c13eba1b$var$resize);
+function $9e8fbf34c13eba1b$var$resize() {
     const w = screen.width;
     if (w < 1250) {
-        if (window.innerWidth > window.innerHeight) $c7f7ec300a2c5ebf$var$m.setAttribute($c7f7ec300a2c5ebf$var$c, $c7f7ec300a2c5ebf$var$v + "1024," + $c7f7ec300a2c5ebf$var$u);
-        else if (w < 500) $c7f7ec300a2c5ebf$var$m.setAttribute($c7f7ec300a2c5ebf$var$c, $c7f7ec300a2c5ebf$var$v + "375," + $c7f7ec300a2c5ebf$var$u);
-        else $c7f7ec300a2c5ebf$var$m.setAttribute($c7f7ec300a2c5ebf$var$c, $c7f7ec300a2c5ebf$var$v + "768," + $c7f7ec300a2c5ebf$var$u);
-    } else $c7f7ec300a2c5ebf$var$m.setAttribute($c7f7ec300a2c5ebf$var$c, $c7f7ec300a2c5ebf$var$v + "device-width," + $c7f7ec300a2c5ebf$var$u);
+        if (window.innerWidth > window.innerHeight) $9e8fbf34c13eba1b$var$m.setAttribute($9e8fbf34c13eba1b$var$c, $9e8fbf34c13eba1b$var$v + "1024," + $9e8fbf34c13eba1b$var$u);
+        else if (w < 500) $9e8fbf34c13eba1b$var$m.setAttribute($9e8fbf34c13eba1b$var$c, $9e8fbf34c13eba1b$var$v + "375," + $9e8fbf34c13eba1b$var$u);
+        else $9e8fbf34c13eba1b$var$m.setAttribute($9e8fbf34c13eba1b$var$c, $9e8fbf34c13eba1b$var$v + "768," + $9e8fbf34c13eba1b$var$u);
+    } else $9e8fbf34c13eba1b$var$m.setAttribute($9e8fbf34c13eba1b$var$c, $9e8fbf34c13eba1b$var$v + "device-width," + $9e8fbf34c13eba1b$var$u);
 }
 
 
-function $eb955ec49c5c14a9$export$8547400810e93696(el) {
+function $cf5bb9ac9e94c6df$export$8547400810e93696(el) {
     var ref;
     const list = el.closest(".what-send__list");
-    console.log(el);
     list.style.minHeight = `${(ref = el.querySelector(".what-send__content")) === null || ref === void 0 ? void 0 : ref.offsetHeight}`;
 }
-function $eb955ec49c5c14a9$export$2e2bcd8739ae039() {
+function $cf5bb9ac9e94c6df$export$2e2bcd8739ae039() {
     const listArray = document.querySelectorAll("[select-list]");
     if (listArray.length) listArray.forEach((list)=>{
         const itemArray = Array.from(list.querySelectorAll("[select-item]"));
         let activeItem = itemArray.find((item)=>item.classList.contains("active"));
-        if ((activeItem === null || activeItem === void 0 ? void 0 : activeItem.classList.contains("what-send__item")) && window.innerWidth > 375) $eb955ec49c5c14a9$export$8547400810e93696(activeItem);
+        if ((activeItem === null || activeItem === void 0 ? void 0 : activeItem.classList.contains("what-send__item")) && window.innerWidth > 375) $cf5bb9ac9e94c6df$export$8547400810e93696(activeItem);
         itemArray.forEach((item)=>{
             var ref;
             (ref = item.querySelector("[select-button]")) === null || ref === void 0 ? void 0 : ref.addEventListener("click", (e)=>{
@@ -55,7 +53,7 @@ function $eb955ec49c5c14a9$export$2e2bcd8739ae039() {
                     activeItem = item;
                 }
                 if (activeItem === null || activeItem === void 0 ? void 0 : activeItem.classList.contains("what-send__item")) {
-                    if (window.innerWidth > 375) $eb955ec49c5c14a9$export$8547400810e93696(activeItem);
+                    if (window.innerWidth > 375) $cf5bb9ac9e94c6df$export$8547400810e93696(activeItem);
                 }
             });
         });
@@ -63,7 +61,7 @@ function $eb955ec49c5c14a9$export$2e2bcd8739ae039() {
 }
 
 
-function $dbeb14a3a7e39f91$export$2e2bcd8739ae039() {
+function $a7272b453e1406fa$export$2e2bcd8739ae039() {
     const openButton = document.querySelector(".btn-menu-mob");
     const closeButton = document.querySelector(".btn-menu-mob-close");
     const body = document.querySelector("body");
@@ -87,7 +85,7 @@ function $dbeb14a3a7e39f91$export$2e2bcd8739ae039() {
 })(Element.prototype);
 
 
-var $b789647d9ef127d9$exports = {};
+var $62d72174b97595f1$exports = {};
 /**
  * Swiper 8.2.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -99,8 +97,8 @@ var $b789647d9ef127d9$exports = {};
  *
  * Released on: June 13, 2022
  */ !function(e, t) {
-    $b789647d9ef127d9$exports = t();
-}($b789647d9ef127d9$exports, function() {
+    $62d72174b97595f1$exports = t();
+}($62d72174b97595f1$exports, function() {
     "use strict";
     function e(e) {
         return null !== e && "object" == typeof e && "constructor" in e && e.constructor === Object;
@@ -4177,7 +4175,7 @@ var $b789647d9ef127d9$exports = {};
 }); //# sourceMappingURL=swiper-bundle.min.js.map
 
 
-const $ad621f415a9e0211$export$b7e6fe0b9e933050 = {
+const $a427ef0ae60865e7$export$b7e6fe0b9e933050 = {
     speed: 800,
     touchRatio: 2,
     slidesPerView: 1,
@@ -4190,10 +4188,10 @@ const $ad621f415a9e0211$export$b7e6fe0b9e933050 = {
         loadPrevNextAmount: 3
     }
 };
-function $ad621f415a9e0211$export$2e2bcd8739ae039() {
+function $a427ef0ae60865e7$export$2e2bcd8739ae039() {
     const swiperEl = document.querySelector(".swiper.slider-mobile");
-    if (swiperEl) new (0, (/*@__PURE__*/$parcel$interopDefault($b789647d9ef127d9$exports)))(swiperEl, {
-        ...$ad621f415a9e0211$export$b7e6fe0b9e933050,
+    if (swiperEl) new (0, (/*@__PURE__*/$parcel$interopDefault($62d72174b97595f1$exports)))(swiperEl, {
+        ...$a427ef0ae60865e7$export$b7e6fe0b9e933050,
         loop: true,
         loopAdditionalSlides: 2,
         navigation: {
@@ -4210,11 +4208,10 @@ function $ad621f415a9e0211$export$2e2bcd8739ae039() {
         }
     });
 }
-function $ad621f415a9e0211$export$e408000dbaf1a8b9() {
+function $a427ef0ae60865e7$export$e408000dbaf1a8b9() {
     const swiperEl = document.querySelector(".memory .swiper");
-    console.log(swiperEl);
-    if (swiperEl && document.documentElement.clientWidth < 1250) new (0, (/*@__PURE__*/$parcel$interopDefault($b789647d9ef127d9$exports)))(swiperEl, {
-        ...$ad621f415a9e0211$export$b7e6fe0b9e933050,
+    if (swiperEl && document.documentElement.clientWidth < 1250) new (0, (/*@__PURE__*/$parcel$interopDefault($62d72174b97595f1$exports)))(swiperEl, {
+        ...$a427ef0ae60865e7$export$b7e6fe0b9e933050,
         spaceBetween: 30,
         slidesPerView: "auto"
     });
@@ -4223,7 +4220,7 @@ function $ad621f415a9e0211$export$e408000dbaf1a8b9() {
 
 
 
-function $8442f14a6ce1f79f$export$2e2bcd8739ae039() {
+function $78312198b91c5141$export$2e2bcd8739ae039() {
     const swiperEl = document.querySelector(".news__gallery .swiper");
     const navigation = document.querySelector(".navigation");
     const imgs = swiperEl === null || swiperEl === void 0 ? void 0 : swiperEl.querySelectorAll(".swiper-slide img");
@@ -4239,8 +4236,8 @@ function $8442f14a6ce1f79f$export$2e2bcd8739ae039() {
         return text;
     }
     if (swiperEl && document.documentElement.clientWidth > 1250) {
-        const swiper = new (0, (/*@__PURE__*/$parcel$interopDefault($b789647d9ef127d9$exports)))(swiperEl, {
-            ...(0, $ad621f415a9e0211$export$b7e6fe0b9e933050),
+        const swiper = new (0, (/*@__PURE__*/$parcel$interopDefault($62d72174b97595f1$exports)))(swiperEl, {
+            ...(0, $a427ef0ae60865e7$export$b7e6fe0b9e933050),
             spaceBetween: 10,
             pagination: {
                 el: navigation,
@@ -4255,11 +4252,11 @@ function $8442f14a6ce1f79f$export$2e2bcd8739ae039() {
 }
 
 
-const $2aeb17fbf1d2b7c5$var$overlay = document.querySelector(".modal-overlay");
-$2aeb17fbf1d2b7c5$var$overlay.addEventListener("click", ()=>{
-    $2aeb17fbf1d2b7c5$var$closePopup();
+const $d82eb7c5f693f86b$var$overlay = document.querySelector(".modal-overlay");
+$d82eb7c5f693f86b$var$overlay.addEventListener("click", ()=>{
+    $d82eb7c5f693f86b$var$closePopup();
 });
-const $2aeb17fbf1d2b7c5$var$buttons = document.querySelectorAll(".button-video").forEach((btn)=>{
+const $d82eb7c5f693f86b$var$buttons = document.querySelectorAll(".button-video").forEach((btn)=>{
     btn.addEventListener("click", (e)=>{
         var ref;
         const videoId = (ref = e.target.closest("[video-id]")) === null || ref === void 0 ? void 0 : ref.getAttribute("video-id");
@@ -4274,29 +4271,29 @@ const $2aeb17fbf1d2b7c5$var$buttons = document.querySelectorAll(".button-video")
     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </div>`;
-        $2aeb17fbf1d2b7c5$var$openPopupVideo(frame);
+        $d82eb7c5f693f86b$var$openPopupVideo(frame);
     });
 });
-function $2aeb17fbf1d2b7c5$var$openPopupVideo(frame) {
+function $d82eb7c5f693f86b$var$openPopupVideo(frame) {
     var ref;
-    $2aeb17fbf1d2b7c5$var$overlay.insertAdjacentHTML("afterbegin", frame);
+    $d82eb7c5f693f86b$var$overlay.insertAdjacentHTML("afterbegin", frame);
     document.body.classList.add("modal-active");
-    (ref = $2aeb17fbf1d2b7c5$var$overlay.querySelector(".close-btn")) === null || ref === void 0 ? void 0 : ref.addEventListener("click", ()=>{
-        $2aeb17fbf1d2b7c5$var$closePopup();
+    (ref = $d82eb7c5f693f86b$var$overlay.querySelector(".close-btn")) === null || ref === void 0 ? void 0 : ref.addEventListener("click", ()=>{
+        $d82eb7c5f693f86b$var$closePopup();
     });
 }
-function $2aeb17fbf1d2b7c5$var$closePopup() {
+function $d82eb7c5f693f86b$var$closePopup() {
     var ref, ref1;
     document.body.classList.remove("modal-active");
     (ref = document.querySelector(".modal.active")) === null || ref === void 0 ? void 0 : ref.classList.remove("active");
-    (ref1 = $2aeb17fbf1d2b7c5$var$overlay.querySelector(".adaptive_youtube-wrapper")) === null || ref1 === void 0 ? void 0 : ref1.remove();
+    (ref1 = $d82eb7c5f693f86b$var$overlay.querySelector(".adaptive_youtube-wrapper")) === null || ref1 === void 0 ? void 0 : ref1.remove();
 }
 
 
-var $90f63df9f9476cc1$exports = {};
+var $70ee76a8c1dcf6e1$exports = {};
 !function(e, t) {
-    $90f63df9f9476cc1$exports = t();
-}($90f63df9f9476cc1$exports, function() {
+    $70ee76a8c1dcf6e1$exports = t();
+}($70ee76a8c1dcf6e1$exports, function() {
     return function(e) {
         function t(o) {
             if (n[o]) return n[o].exports;
@@ -4736,7 +4733,7 @@ var $90f63df9f9476cc1$exports = {};
 });
 
 
-var $a5418b15d4d888d6$exports = {};
+var $fedb3c10351bb98e$exports = {};
 // ------------------------------------------
 // Rellax.js
 // Buttery smooth parallax library
@@ -4749,10 +4746,10 @@ var $a5418b15d4d888d6$exports = {};
 (function(root, factory) {
     if (typeof define === "function" && define.amd) // AMD. Register as an anonymous module.
     define([], factory);
-    else if ($a5418b15d4d888d6$exports) // Node. Does not work with strict CommonJS, but
+    else if ($fedb3c10351bb98e$exports) // Node. Does not work with strict CommonJS, but
     // only CommonJS-like environments that support module.exports,
     // like Node.
-    $a5418b15d4d888d6$exports = factory();
+    $fedb3c10351bb98e$exports = factory();
     else // Browser globals (root is window)
     root.Rellax = factory();
 })(typeof window !== "undefined" ? window : $parcel$global, function() {
@@ -5136,14 +5133,14 @@ var $a5418b15d4d888d6$exports = {};
 
 
 
-function $cba32e3d4881e487$export$d677581f60632485() {
+function $a46dbfa2c3db423b$export$d677581f60632485() {
     const blocks = document.querySelectorAll(".block-with-slider");
     if (blocks.length) blocks.forEach((block)=>{
         const btnNext = block.querySelector(".button-next");
         const btnPrev = block.querySelector(".button-prev");
         const swiperEl = block.querySelector(".swiper");
-        if (btnNext && btnPrev && swiperEl) new (0, (/*@__PURE__*/$parcel$interopDefault($b789647d9ef127d9$exports)))(swiperEl, {
-            ...(0, $ad621f415a9e0211$export$b7e6fe0b9e933050),
+        if (btnNext && btnPrev && swiperEl) new (0, (/*@__PURE__*/$parcel$interopDefault($62d72174b97595f1$exports)))(swiperEl, {
+            ...(0, $a427ef0ae60865e7$export$b7e6fe0b9e933050),
             autoHeight: true,
             spaceBetween: 20,
             slidesPerView: "auto",
@@ -5162,8 +5159,8 @@ function $cba32e3d4881e487$export$d677581f60632485() {
 }
 
 
-const $a31eb1c22e8a28d9$var$mapBlock = document.querySelector(".map-block");
-const $a31eb1c22e8a28d9$var$adresses = [];
+const $3de41c57de3a989e$var$mapBlock = document.querySelector(".map-block");
+const $3de41c57de3a989e$var$adresses = [];
 document.querySelectorAll(".map-block__item").forEach((city, id)=>{
     const cityItem = {
         colorClaster: city.querySelectorAll(".map-block__type:not(.brown)").length > city.querySelectorAll(".map-block__type.brown").length,
@@ -5180,9 +5177,9 @@ document.querySelectorAll(".map-block__item").forEach((city, id)=>{
             green: !li.querySelector(".map-block__type.brown")
         });
     });
-    $a31eb1c22e8a28d9$var$adresses[id] = cityItem;
+    $3de41c57de3a989e$var$adresses[id] = cityItem;
 });
-if ($a31eb1c22e8a28d9$var$mapBlock) {
+if ($3de41c57de3a989e$var$mapBlock) {
     const mobileBoolean = document.documentElement.clientWidth < 400;
     const centerCoordinate = mobileBoolean ? [
         56.66612842030013,
@@ -5192,16 +5189,16 @@ if ($a31eb1c22e8a28d9$var$mapBlock) {
         53.05381378684546
     ];
     const maxWidthBalloon = mobileBoolean ? 300 : 500;
-    const buttons = $a31eb1c22e8a28d9$var$mapBlock.querySelectorAll(".map-block__buttons button");
+    const buttons = $3de41c57de3a989e$var$mapBlock.querySelectorAll(".map-block__buttons button");
     const buttonsToMap = document.querySelectorAll(".smooth-scroll#show-map");
     buttons.forEach((btn)=>{
         btn.addEventListener("click", ()=>{
-            $a31eb1c22e8a28d9$var$mapBlock.id = btn.id;
+            $3de41c57de3a989e$var$mapBlock.id = btn.id;
         });
     });
     buttonsToMap.forEach((btn)=>{
         btn.addEventListener("click", ()=>{
-            $a31eb1c22e8a28d9$var$mapBlock.id = btn.id;
+            $3de41c57de3a989e$var$mapBlock.id = btn.id;
         });
     });
     ymaps.ready(init);
@@ -5218,7 +5215,7 @@ if ($a31eb1c22e8a28d9$var$mapBlock) {
             zoom: 9,
             controls: []
         });
-        $a31eb1c22e8a28d9$var$adresses.forEach((item)=>{
+        $3de41c57de3a989e$var$adresses.forEach((item)=>{
             var myGeoObjects = [];
             item.adresses.forEach((item, index)=>{
                 var ref, ref1, ref2;
@@ -5307,22 +5304,22 @@ if ($a31eb1c22e8a28d9$var$mapBlock) {
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    $67e4469ca2ef2689$var$aosInit();
-    $67e4469ca2ef2689$var$initScrolto();
-    (0, $dbeb14a3a7e39f91$export$2e2bcd8739ae039)();
-    (0, $ad621f415a9e0211$export$2e2bcd8739ae039)();
-    (0, $8442f14a6ce1f79f$export$2e2bcd8739ae039)();
-    (0, $ad621f415a9e0211$export$e408000dbaf1a8b9)();
-    (0, $cba32e3d4881e487$export$d677581f60632485)();
+    $6cd667352e172e7a$var$aosInit();
+    $6cd667352e172e7a$var$initScrolto();
+    (0, $a7272b453e1406fa$export$2e2bcd8739ae039)();
+    (0, $a427ef0ae60865e7$export$2e2bcd8739ae039)();
+    (0, $78312198b91c5141$export$2e2bcd8739ae039)();
+    (0, $a427ef0ae60865e7$export$e408000dbaf1a8b9)();
+    (0, $a46dbfa2c3db423b$export$d677581f60632485)();
 });
 window.onload = ()=>{
-    (0, $eb955ec49c5c14a9$export$2e2bcd8739ae039)();
-    (0, (/*@__PURE__*/$parcel$interopDefault($90f63df9f9476cc1$exports))).refresh();
-    if (document.documentElement.clientWidth > 500) new (0, (/*@__PURE__*/$parcel$interopDefault($a5418b15d4d888d6$exports)))(".rellax", {
+    (0, $cf5bb9ac9e94c6df$export$2e2bcd8739ae039)();
+    (0, (/*@__PURE__*/$parcel$interopDefault($70ee76a8c1dcf6e1$exports))).refresh();
+    if (document.documentElement.clientWidth > 500) new (0, (/*@__PURE__*/$parcel$interopDefault($fedb3c10351bb98e$exports)))(".rellax", {
         center: true
     });
 };
-function $67e4469ca2ef2689$var$initScrolto() {
+function $6cd667352e172e7a$var$initScrolto() {
     document.querySelectorAll(".smooth-scroll").forEach((el)=>{
         el.addEventListener("click", ()=>{
             const id = el.getAttribute("data-link");
@@ -5340,8 +5337,8 @@ function $67e4469ca2ef2689$var$initScrolto() {
         });
     });
 }
-function $67e4469ca2ef2689$var$aosInit() {
-    (0, (/*@__PURE__*/$parcel$interopDefault($90f63df9f9476cc1$exports))).init({
+function $6cd667352e172e7a$var$aosInit() {
+    (0, (/*@__PURE__*/$parcel$interopDefault($70ee76a8c1dcf6e1$exports))).init({
         offset: 100,
         delay: 0,
         duration: 500,
@@ -5353,5 +5350,5 @@ function $67e4469ca2ef2689$var$aosInit() {
     });
 }
 
-})();
-//# sourceMappingURL=index.57819ce2.js.map
+
+//# sourceMappingURL=index.93e41046.js.map
