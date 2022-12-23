@@ -1,12 +1,12 @@
-import { openPopup } from "./popup.ts";
-
 const overlay = document.querySelector(".modal-overlay") as HTMLElement;
 overlay.addEventListener("click", () => {
   closePopup();
 });
 const buttons = document.querySelectorAll(".button-video").forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    const videoId = e.target.closest("[video-id]").getAttribute("video-id");
+    const videoId = (e.target as HTMLElement)
+      .closest("[video-id]")
+      ?.getAttribute("video-id");
     const frame = `
     <div class="adaptive_youtube-wrapper">
     <div class="spinner"></div>

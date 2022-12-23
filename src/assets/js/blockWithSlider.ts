@@ -1,4 +1,4 @@
-import { baseSliderOptions } from "./slider-mobile.ts";
+import { baseSliderOptions } from "./slider-mobile";
 import Swiper from "./swiper/swiper-bundle.min.js";
 
 export function blockWithSlider() {
